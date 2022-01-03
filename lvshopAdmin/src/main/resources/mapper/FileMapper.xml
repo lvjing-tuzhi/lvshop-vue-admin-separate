@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lvshopadmin.mapper.FileMapper">
+
+    <select id="select" resultType="File">
+        select *
+        from file;
+    </select>
+
+    <select id="selectByType" resultType="File">
+        select *
+        from file where type = #{type};
+    </select>
+
+    <select id="selectById" resultType="File">
+        select *
+        from file where id = #{id};
+    </select>
+
+    <insert id="add" parameterType="File">
+        insert into file (name, url, `describe`, type, position)
+        values (#{name},#{url},#{describe},#{type},#{position});
+    </insert>
+
+    <update id="update" parameterType="File">
+        update file
+        <set>
+            <if test="name != null">
+                name = #{name}
+            </if>
+            <if test="url != null">
+                url = #{url}
+            </if>
+            <if test="describe != null">
+                describe = #{describe}
+            </if>
+            <if test="position != null">
+                position = #{position}
+            </if>
+            <if test="type != null">
+                type = #{type}
+            </if>
+        </set>
+        where id = #{id};
+    </update>
+
+    <delete id="deleteById">
+        delete
+        from file
+        where id = #{id};
+    </delete>
+
+
+</mapper>
