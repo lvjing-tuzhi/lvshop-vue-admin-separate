@@ -2,7 +2,7 @@
   <div>
     <el-carousel trigger="click" :height="h">
       <el-carousel-item v-for="item in swiperItem" :key="item">
-        <a :href="item.link"><img :src="swiperImg(item)" alt="" @load="swiperLoad" :style="imgStyle"></a>
+        <a :href="item.url"><img :src="swiperImg(item)" alt="" @load="swiperLoad" :style="imgStyle"></a>
       </el-carousel-item>
     </el-carousel>
   </div>
@@ -38,7 +38,7 @@ export default {
   },
   methods: {
     swiperImg(item) {
-      return item.image || 'http://'+item
+      return item.position || 'http://'+item
     },
     swiperLoad() {
         this.$emit('swiperLoad')

@@ -25,6 +25,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/file")
 @Api(tags = {"文件接口"})
+@CrossOrigin
 public class FileController {
 
     @Autowired

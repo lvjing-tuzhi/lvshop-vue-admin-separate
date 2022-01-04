@@ -1,9 +1,18 @@
 import{request} from "./request";
 
+
+// 获取轮播图图片
+export function getHomeBanner() {
+    return request({
+        url: '/file/banner'
+        // url: '/home/hello'
+    })
+}
+
 //获得首页数据
 export function getHomeMultidata() {
     return request({
-        url : '/home/multidata'
+        url: '/home/multidata'
     })
 }
 
@@ -17,3 +26,4 @@ export function getHomeGoods(type,page) {
         }
     })
 }
+

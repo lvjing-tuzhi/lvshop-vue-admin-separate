@@ -62,7 +62,7 @@ import Scroll from "../../components/common/scroll/Scroll";
 
 import {debounce} from "../../common/utils";
 
-import {getHomeMultidata,getHomeGoods} from "../../network/home";
+import {getHomeBanner, getHomeMultidata, getHomeGoods} from "../../network/home";
 
 import{backTopMixin} from "../../common/mixin";
 
@@ -101,9 +101,9 @@ export default {
   },
   created() {
     this.getHomeMultidata()
-    this.getHomeGoods('pop')
-    this.getHomeGoods('new')
-    this.getHomeGoods('sell')
+    // this.getHomeGoods('pop')
+    // this.getHomeGoods('new')
+    // this.getHomeGoods('sell')
   },
   mounted() {
     this.tabControlWidth = 'width:'+this.$refs.tabControl.$el.offsetWidth+'px;'
@@ -138,10 +138,17 @@ export default {
      *网络请求
      * */
     getHomeMultidata() {
-      getHomeMultidata().then( res => {
-        this.bannerItem = res.data.banner.list
-        this.homeRecomendItem = res.data.recommend.list
+
+      // 获得轮播图
+      getHomeBanner().then( res => {
+        this.bannerItem = res.result
+        console.log(this.bannerItem);
       })
+
+      // getHomeMultidata().then( res => {
+      //   this.bannerItem = res.data.banner.list
+      //   this.homeRecomendItem = res.data.recommend.list
+      // })
     },
     getHomeGoods(type) {
       const page = this.goods[type].page + 1;
