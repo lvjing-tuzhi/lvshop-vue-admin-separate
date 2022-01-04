@@ -2,16 +2,18 @@ import {request} from './request'
 
 export function getCategory() {
   return request({
-    url: '/category'
+    // url: '/category'
+    url: '/category/one'
   })
 }
 
 export function getSubcategory(maitKey) {
   return request({
-    url: '/subcategory',
-    params: {
-      maitKey
-    }
+    // url: '/subcategory',
+    url: '/category/pid/'+maitKey,
+    // params: {
+    //   maitKey
+    // }
   })
 }
 

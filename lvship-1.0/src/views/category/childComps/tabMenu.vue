@@ -6,7 +6,7 @@
           :key="item.id"
           @click="menuItemClick(index,item)"
           :class="{current:currentMenu==index}" >
-        {{item.title}}
+        {{item.name}}
       </div>
   </scroll>
 </template>
@@ -21,7 +21,7 @@ export default {
   data() {
     return {
       category: {},
-      currentMenu:0,
+      currentMenu: 0,
     }
   },
   created() {
@@ -30,11 +30,13 @@ export default {
   methods: {
     menuItemClick(index,item) {
       this.currentMenu = index
-      this.$emit('maitKey',item.maitKey)
+      // 点击的时候把一级分类的id发送给父组件
+      this.$emit('maitKey',item.id)
     },
+    //获取一级分类
     getCategory() {
       getCategory().then( res => {
-        this.category = res.data.category.list
+        this.category = res.result
       } )
     }
   }

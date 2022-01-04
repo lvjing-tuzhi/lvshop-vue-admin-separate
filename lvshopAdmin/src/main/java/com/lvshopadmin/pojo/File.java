@@ -19,9 +19,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 
 @Data
-@ApiModel("文件实体")
 @AllArgsConstructor
 @NoArgsConstructor
+@ApiModel("文件实体")
 public class File {
     @ApiModelProperty("id")
     private Integer id;

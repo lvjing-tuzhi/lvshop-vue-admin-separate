@@ -1,8 +1,8 @@
 <template>
   <div class="item">
-    <a :href="detaiItem.link" >
-      <img :src="detaiItem.image" class="item-img" @load="imgLoad">
-      <div class="title">{{detaiItem.title}}</div>
+    <a :href="detaiItem.cover" >
+      <img :src="detaiItem.cover" class="item-img" @load="imgLoad">
+      <div class="title">{{detaiItem.name}}</div>
     </a>
   </div>
 </template>

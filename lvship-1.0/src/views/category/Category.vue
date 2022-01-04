@@ -28,7 +28,7 @@ export default {
     }
   },
   created() {
-    this.getCategory()
+    // this.getCategory()
   },
   mounted() {
   },
@@ -37,9 +37,8 @@ export default {
       this.getSubcategory(maitKey)
     },
     getSubcategory(maitKey) {
-      console.log(maitKey);
       getSubcategory(maitKey).then( res => {
-        this.categoryDetail = res.data.list
+        this.categoryDetail = res.result
       })
     },
    getCategory() {

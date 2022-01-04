@@ -2,7 +2,7 @@
 
     <scroll class="content" :probe-click="true" ref="scroll">
       <div class="category-detail">
-        <category-detail-item v-for="item in categoryDetail" :detai-item="item" :key="item.image" @imgLoad="imgLoad"/>
+        <category-detail-item v-for="item in categoryDetail" :detai-item="item" :key="item.id" @imgLoad="imgLoad"/>
       </div>
     </scroll>
 

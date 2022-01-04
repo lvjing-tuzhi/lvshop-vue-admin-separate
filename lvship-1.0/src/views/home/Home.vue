@@ -142,7 +142,6 @@ export default {
       // 获得轮播图
       getHomeBanner().then( res => {
         this.bannerItem = res.result
-        console.log(this.bannerItem);
       })
 
       // getHomeMultidata().then( res => {
