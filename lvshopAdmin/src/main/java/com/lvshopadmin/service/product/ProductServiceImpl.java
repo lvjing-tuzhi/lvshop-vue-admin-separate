@@ -2,6 +2,7 @@ package com.lvshopadmin.service.product;
 
 import com.lvshopadmin.mapper.ProductMapper;
 import com.lvshopadmin.pojo.Product;
+import com.lvshopadmin.util.PageUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -28,6 +29,11 @@ public class ProductServiceImpl implements ProductService{
     @Override
     public List<Product> selectByRecommendType(String recommendType) {
         return productMapper.selectByRecommendType(recommendType);
+    }
+
+    @Override
+    public List<Product> selectByRecommendTypePage(String recommendType, int page, int size) {
+        return productMapper.selectByRecommendTypePage(recommendType, PageUtil.getPage(page,size),size);
     }
 
     @Override

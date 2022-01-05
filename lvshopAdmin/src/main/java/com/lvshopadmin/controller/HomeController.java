@@ -37,5 +37,15 @@ public class HomeController {
         return new Result(true,StatusCode.OK,"查询成功",homeService.selectWeek());
     }
 
+    @PostMapping("/goods")
+    @ApiOperation("按类型分页查询商品")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "type", value = "商品推荐类型,流行：pop。新款：new。精选：sell。本周推荐：week。"),
+            @ApiImplicitParam(name = "page", value = "页数"),
+            @ApiImplicitParam(name = "size", value = "每页数量")
+    })
+    public Result selectTypePage(String type, int page, int size) {
+        return new Result(true,StatusCode.OK,"查询成功",homeService.selectTypePage(type,page,size));
+    }
 
 }

@@ -34,7 +34,7 @@ public class Product {
     @ApiModelProperty("商品封面图")
     private String covers;
     @ApiModelProperty("商品详情图")
-    private String photo;
+    private String photos;
     @ApiModelProperty("商品标题")
     private String title;
     @ApiModelProperty("商品描述")
@@ -48,8 +48,8 @@ public class Product {
     @ApiModelProperty("商品分类id")
     private int categoryId;
     @ApiModelProperty("商品的保证id")
-    private int guaranteeId;
-    @ApiModelProperty("商品推荐类型,fashion:时尚；new：新款；selected：精选；hot：热门")
+    private String guaranteeId;
+    @ApiModelProperty("商品推荐类型,流行：pop。新款：new。精选：sell。本周推荐：week。")
     private String recommendType;
     @ApiModelProperty("链接")
     private String link;

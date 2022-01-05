@@ -34,11 +34,13 @@ export default {
   computed: {
     imgStyle() {
       return 'width:'+this.imgWidth+';height:'+this.imgHeight
-    }
+    },
+
   },
   methods: {
     swiperImg(item) {
-      return item.position || 'http://'+item
+      console.log(item);
+      return item.position || item
     },
     swiperLoad() {
         this.$emit('swiperLoad')

@@ -15,6 +15,11 @@
         select *
         from product where id = #{id};
     </select>
+    <select id="selectByRecommendTypePage" resultType="Product">
+        select *
+        from product where recommendType = #{recommendType}
+        limit #{page},#{size};
+    </select>
     
 
 </mapper>

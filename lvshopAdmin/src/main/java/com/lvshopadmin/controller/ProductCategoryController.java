@@ -4,6 +4,7 @@ import com.lvshopadmin.entity.Result;
 import com.lvshopadmin.entity.StatusCode;
 import com.lvshopadmin.service.productcategory.ProductCategoryService;
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -24,14 +25,17 @@ public class ProductCategoryController {
     @Autowired
     ProductCategoryService productCategoryService;
 
+
     @GetMapping("/id/{id}")
     @ApiOperation("按id查询分类")
+    @ApiImplicitParam(name = "id", value = "分类的id")
     public Result selectById(@PathVariable("id") int id) {
         return new Result(true,StatusCode.OK,"查询成功",productCategoryService.selectById(id));
     }
 
     @GetMapping("/pid/{pid}")
     @ApiOperation("按pid查询分类")
+    @ApiImplicitParam(name = "pid", value = "pid：一级分类的id")
     public Result selectByPid(@PathVariable("pid") int pid) {
         return new Result(true,StatusCode.OK,"查询成",productCategoryService.selectByPid(pid));
     }

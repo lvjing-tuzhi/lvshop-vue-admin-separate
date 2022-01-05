@@ -17,5 +17,7 @@ public interface HomeService {
 
     //获取本周推荐接口
     List<Product> selectWeek();
+    //按类型获得分页商品
+    List<Product> selectTypePage(String recommendType, int page, int size);
 
 }

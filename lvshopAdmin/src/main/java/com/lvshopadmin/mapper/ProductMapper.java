@@ -21,6 +21,8 @@ public interface ProductMapper {
     List<Product> select();
     //按推荐类型查询所有产品
     List<Product> selectByRecommendType(@Param("recommendType") String recommendType);
+    //按推荐类型分页查询产品
+    List<Product> selectByRecommendTypePage(@Param("recommendType") String recommendType, @Param("page") int page, @Param("size") int size);
     //按id查询产品
     Product selectById(@Param("id") int id);
 }

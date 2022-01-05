@@ -26,4 +26,9 @@ public class HomeServiceImpl implements HomeService{
     public List<Product> selectWeek() {
         return productService.selectByRecommendType("week");
     }
+
+    @Override
+    public List<Product> selectTypePage(String recommendType, int page, int size) {
+        return productService.selectByRecommendTypePage(recommendType,page,size);
+    }
 }

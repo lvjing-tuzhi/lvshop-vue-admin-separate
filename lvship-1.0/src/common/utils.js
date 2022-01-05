@@ -1,5 +1,10 @@
 //公共方法
 
+// 图片字符分割成数组
+export function photosToArray(data) {
+    return data.split("吕竟的分隔符")
+}
+
 // 防抖函数
 export  function debounce (func, delay=200){
     let timer = null

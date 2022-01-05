@@ -9,10 +9,23 @@ export function getHomeBanner() {
     })
 }
 
-// 获得本周推荐
+// 获得本周推荐商品
 export function getHomeWeek() {
     return request({
         url: '/home/week'
+    })
+}
+
+// 按类型分页查询商品
+export function getHomeTypePage(type,page,size) {
+    return request({
+        url: '/home/goods',
+        method: 'post',
+        params: {
+            type,
+            page,
+            size
+        }
     })
 }
 

@@ -62,7 +62,7 @@ import Scroll from "../../components/common/scroll/Scroll";
 
 import {debounce} from "../../common/utils";
 
-import {getHomeBanner,getHomeWeek} from "../../network/home";
+import {getHomeBanner, getHomeTypePage, getHomeWeek} from "../../network/home";
 // import {getHomeMultidata, getHomeGoods} from "../../network/home";
 
 import{backTopMixin} from "../../common/mixin";
@@ -102,9 +102,9 @@ export default {
   },
   created() {
     this.getHomeMultidata()
-    // this.getHomeGoods('pop')
-    // this.getHomeGoods('new')
-    // this.getHomeGoods('sell')
+    this.getHomeGoods('pop')
+    this.getHomeGoods('new')
+    this.getHomeGoods('sell')
   },
   mounted() {
     this.tabControlWidth = 'width:'+this.$refs.tabControl.$el.offsetWidth+'px;'
@@ -148,7 +148,6 @@ export default {
       //获得本周推荐
       getHomeWeek().then( res => {
         this.homeRecomendItem = res.result
-        console.log(this.homeRecomendItem);
       })
 
       // getHomeMultidata().then( res => {
@@ -158,8 +157,8 @@ export default {
     },
     getHomeGoods(type) {
       const page = this.goods[type].page + 1;
-      getHomeGoods(type,page).then( res => {
-        this.goods[type].list.push(...res.data.list);
+      getHomeTypePage(type,page,5).then( res => {
+        this.goods[type].list.push(...res.result);
         this.goods[type].page += 1;
       });
     },

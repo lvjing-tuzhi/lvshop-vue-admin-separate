@@ -16,6 +16,7 @@
 </template>
 
 <script>
+// import {getDetail} from "../../network/detail";
 import {getDetail,Goods,GoodsParam,getRecommend} from "../../network/detail";
 import DetailNavBar from "./childComps/DetailNavBar";
 import Scroll from "../../components/common/scroll/Scroll";
@@ -23,7 +24,7 @@ import Swiper from "../../components/common/swiper/Swiper";
 import DetailBottom from "./childComps/DetailBottom";
 import DetailBaseInfo from "./childComps/DetailBaseInfo";
 import DetailShopInfo from "./childComps/DetailShopInfo";
-import {debounce} from "../../common/utils";
+import {debounce,photosToArray} from "../../common/utils";
 import DetailGoodsInfo from "./childComps/DetailGoodsInfo";
 import DetailParamInfo from "./childComps/DetailParamInfo";
 import DetailComment from "./childComps/DetailComment";
@@ -67,7 +68,7 @@ export default {
   created() {
     this.goodId = this.$route.params.iid
     this.getDetail(this.goodId)
-    this.getRecommend()
+    // this.getRecommend()
 
   },
   mounted() {
@@ -107,9 +108,12 @@ export default {
     getDetail(iid) {
       getDetail(iid).then( res => {
         let data = res.result
-        this.iid = iid
-        this.topImageOne = data.itemInfo.topImages[0]
-        this.goodsBanner = data.itemInfo.topImages
+        this.iid = data.id
+        this.topImageOne = data.covers
+        this.goodsBanner = photosToArray(data.photos)
+        // this.iid = iid
+        // this.topImageOne = data.itemInfo.topImages[0]
+        // this.goodsBanner = data.itemInfo.topImages
         this.goods = new Goods(data.itemInfo,data.columns,data.shopInfo.services)
         this.goodsShop = data.shopInfo
         this.detailInfo = data.detailInfo
@@ -135,7 +139,7 @@ export default {
       this.topType.push(this.$refs.comment.$el.offsetTop)
       this.topType.push(this.$refs.recommend.$el.offsetTop)
       this.topType.push(Number.MAX_VALUE)
-    }
+    },
   }
 }
 </script>

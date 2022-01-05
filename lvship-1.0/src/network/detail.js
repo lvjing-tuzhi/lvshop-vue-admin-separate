@@ -1,14 +1,20 @@
 import {request} from "./request";
 
-export function getDetail (iid) {
+export function getDetail(id) {
     return request({
-        url: '/detail/',
-        params: {
-            iid
-        }
+        url: '/product/'+id
     })
 }
 
+// export function getDetail (iid) {
+//     return request({
+//         url: '/detail/',
+//         params: {
+//             iid
+//         }
+//     })
+// }
+//
 export class Goods {
     constructor(itemInfo, columns, services) {
         this.title = itemInfo.title;

@@ -18,6 +18,8 @@ public interface ProductService {
     List<Product> select();
     //按推荐类型查询所有产品
     List<Product> selectByRecommendType(String recommendType);
+    //按推荐类型分页查询产品
+    List<Product> selectByRecommendTypePage(String recommendType, int page, int size);
     //按id查询产品
     Product selectById(int id);
 }

@@ -22,7 +22,8 @@ export default {
   },
   computed: {
     showImage() {
-      return this.goodListItem.image || this.goodListItem.img || this.goodListItem.show.img
+      // return this.goodListItem.image || this.goodListItem.img || this.goodListItem.show.img
+      return this.goodListItem.covers
     }
   },
   methods: {
@@ -30,7 +31,7 @@ export default {
       this.$emit('goodLoad')
     },
     goodClick() {
-      this.$router.push('/detail/'+this.goodListItem.iid)
+      this.$router.push('/detail/'+this.goodListItem.id)
     }
   }
 }
