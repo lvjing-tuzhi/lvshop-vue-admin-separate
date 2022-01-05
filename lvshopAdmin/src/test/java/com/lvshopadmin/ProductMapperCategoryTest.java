@@ -16,7 +16,7 @@ import java.util.List;
  **/
 
 @SpringBootTest
-public class ProductCategoryTest {
+public class ProductMapperCategoryTest {
 
     @Autowired
     ProductCategoryService categoryService;

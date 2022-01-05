@@ -51,4 +51,6 @@ public class Product {
     private int guaranteeId;
     @ApiModelProperty("商品推荐类型,fashion:时尚；new：新款；selected：精选；hot：热门")
     private String recommendType;
+    @ApiModelProperty("链接")
+    private String link;
 }

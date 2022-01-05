@@ -1,7 +1,7 @@
 <template>
   <div class="recommend">
     <div v-for="item in recommendItem">
-      <home-recommend-item :img="item.image" :title="item.title" :link="item.link"></home-recommend-item>
+      <home-recommend-item :img="item.covers" :title="item.name" :link="item.link"></home-recommend-item>
     </div>
   </div>
 </template>
@@ -24,10 +24,12 @@ export default {
 </script>
 
 <style scoped>
-  .recommend {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 14px;
-    border-bottom: 10px solid #eee;
-  }
+.recommend {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 14px;
+  border-bottom: 10px solid #eee;
+
+}
+
 </style>

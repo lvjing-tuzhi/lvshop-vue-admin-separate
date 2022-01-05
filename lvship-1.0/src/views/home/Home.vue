@@ -62,7 +62,8 @@ import Scroll from "../../components/common/scroll/Scroll";
 
 import {debounce} from "../../common/utils";
 
-import {getHomeBanner, getHomeMultidata, getHomeGoods} from "../../network/home";
+import {getHomeBanner,getHomeWeek} from "../../network/home";
+// import {getHomeMultidata, getHomeGoods} from "../../network/home";
 
 import{backTopMixin} from "../../common/mixin";
 
@@ -142,6 +143,12 @@ export default {
       // 获得轮播图
       getHomeBanner().then( res => {
         this.bannerItem = res.result
+      })
+
+      //获得本周推荐
+      getHomeWeek().then( res => {
+        this.homeRecomendItem = res.result
+        console.log(this.homeRecomendItem);
       })
 
       // getHomeMultidata().then( res => {

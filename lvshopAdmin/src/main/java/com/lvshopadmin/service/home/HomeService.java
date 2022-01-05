@@ -1,6 +1,7 @@
 package com.lvshopadmin.service.home;
 
 import com.lvshopadmin.pojo.File;
+import com.lvshopadmin.pojo.Product;
 
 import java.util.List;
 
@@ -13,4 +14,8 @@ import java.util.List;
 
 
 public interface HomeService {
+
+    //获取本周推荐接口
+    List<Product> selectWeek();
+
 }

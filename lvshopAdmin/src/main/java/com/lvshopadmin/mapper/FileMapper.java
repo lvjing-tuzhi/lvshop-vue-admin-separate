@@ -19,15 +19,21 @@ import java.util.List;
 @Repository
 public interface FileMapper {
 
+    //查询所有文件
     List<File> select();
 
+    //按类型查询文件
     List<File> selectByType(@Param("type") String type);
 
+    //按id查询文件
     File selectById(@Param("id") Integer id);
 
+    //添加
     int add(File file);
 
+    //更新
     int update(File file);
 
+    //按id删除
     int deleteById(@Param("id") Integer id);
 }

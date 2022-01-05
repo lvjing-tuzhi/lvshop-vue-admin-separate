@@ -12,17 +12,18 @@ module.exports = {
             }
         }
     },
-    // devServer: {
-    //     proxy: {
-    //         '/api': {
-    //             target: 'http://127.0.0.1:8080/',//跨域接口的地址
-    //             logLevel:'debug',
-    //             changeOrigin: true,
-    //             xfwd:true,
-    //             pathRewrite: {
-    //                 '^/api': ''
-    //             }
-    //         },
-    //     }
-    // }
+    devServer: {
+        // proxy: {
+        //     '/api': {
+        //         target: 'http://127.0.0.1:8080/',//跨域接口的地址
+        //         logLevel:'debug',
+        //         changeOrigin: true,
+        //         xfwd:true,
+        //         pathRewrite: {
+        //             '^/api': ''
+        //         }
+        //     },
+        // }
+        port: 80
+    }
 }

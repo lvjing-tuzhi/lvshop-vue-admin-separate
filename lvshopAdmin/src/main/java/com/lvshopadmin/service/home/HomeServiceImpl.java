@@ -1,7 +1,9 @@
 package com.lvshopadmin.service.home;
 
 import com.lvshopadmin.pojo.File;
+import com.lvshopadmin.pojo.Product;
 import com.lvshopadmin.service.file.FileService;
+import com.lvshopadmin.service.product.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,5 +19,11 @@ import java.util.List;
 @Service
 public class HomeServiceImpl implements HomeService{
 
+    @Autowired
+    ProductService productService;
 
+    @Override
+    public List<Product> selectWeek() {
+        return productService.selectByRecommendType("week");
+    }
 }

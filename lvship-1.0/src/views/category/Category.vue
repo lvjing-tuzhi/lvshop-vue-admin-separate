@@ -29,10 +29,17 @@ export default {
   },
   created() {
     // this.getCategory()
+    this.first()
   },
   mounted() {
   },
   methods: {
+    first() {
+      getCategory().then( res => {
+        let firstItem = res.result[0]
+        this.getSubcategory(firstItem.id)
+      })
+    },
     detailMaitKey(maitKey) {
       this.getSubcategory(maitKey)
     },
@@ -41,14 +48,14 @@ export default {
         this.categoryDetail = res.result
       })
     },
-   getCategory() {
-      let temp = 0
-      getCategory().then( res => {
-        let temp = res.data.category.list[0].maitKey
-        console.log(this.oneCategory);
-        this.getSubcategory(temp)
-      })
-    }
+   // getCategory() {
+   //    let temp = 0
+   //    getCategory().then( res => {
+   //      let temp = res.data.category.list[0].maitKey
+   //      console.log(this.oneCategory);
+   //      this.getSubcategory(temp)
+   //    })
+   //  }
   }
 }
 </script>

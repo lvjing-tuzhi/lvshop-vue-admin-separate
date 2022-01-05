@@ -25,10 +25,17 @@ import java.util.List;
 @RestController
 @RequestMapping("/home")
 @Api(tags = {"首页接口"})
+@CrossOrigin
 public class HomeController {
 
     @Autowired
     HomeService homeService;
+
+    @GetMapping("/week")
+    @ApiOperation("查询本周推荐商品")
+    public Result selectWeek() {
+        return new Result(true,StatusCode.OK,"查询成功",homeService.selectWeek());
+    }
 
 
 }

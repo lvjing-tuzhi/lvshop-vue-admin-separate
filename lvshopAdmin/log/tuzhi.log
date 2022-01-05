@@ -3040,3 +3040,1330 @@ com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long
 [DEBUG][22-01-04][druid.sql.ResultSet]{conn-10008, pstmt-20047, rs-50047} closed
 [DEBUG][22-01-04][druid.sql.Statement]{conn-10008, pstmt-20047} closed
 [DEBUG][22-01-04][druid.sql.Connection]{conn-10008} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10001,procId-313} connected
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10001} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20000} created. select *
+        from file where type = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20000} Parameters : [banner]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20000} Types : [VARCHAR]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20000} executed. 15.3615 millis. select *
+        from file where type = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20000, rs-50000} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20000, rs-50000} Header: [id, name, url, describe, date, type, position]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20000, rs-50000} Result: [1, baidu, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fqqpublic.qpic.cn%2Fqq_public%2F0%2F0-2401864875-9EC8A9F92679977181AC20547CE6C8F7%2F0%3Ffmt%3Djpg%26size%3D117%26h%3D600%26w%3D900%26ppv%3D1.jpg&refer=http%3A%2Fhttps://img2.baidu.com/it/u=671937847,1721037349&fm=253&fmt=auto&app=138&f=JPEG?w=563&h=500, 百度图片测试, 2022-01-04 10:45:46.0, banner, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fqqpublic.qpic.cn%2Fqq_public%2F0%2F0-2401864875-9EC8A9F92679977181AC20547CE6C8F7%2F0%3Ffmt%3Djpg%26size%3D117%26h%3D600%26w%3D900%26ppv%3D1.jpg&refer=http%3A%2Fhttps://img2.baidu.com/it/u=671937847,1721037349&fm=253&fmt=auto&app=138&f=JPEG?w=563&h=500]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20000, rs-50000} Result: [6, 百度图片2, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5, 百度图片, 2022-01-04 08:44:57.0, banner, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20000, rs-50000} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20000} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10001} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10001} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20001} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20001} Parameters : [0]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20001} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20001} executed. 7.8794 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20001, rs-50001} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20001, rs-50001} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20001, rs-50001} Result: [1, 上衣, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20001, rs-50001} Result: [2, 裤子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20001, rs-50001} Result: [3, 裙子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20001, rs-50001} Result: [4, 内衣, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20001, rs-50001} Result: [5, 鞋子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20001, rs-50001} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20001} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10001} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10001} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20002} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20002} Parameters : [2]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20002} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20002} executed. 0.8976 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20002, rs-50002} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20002, rs-50002} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20002, rs-50002} Result: [7, 牛仔裤, 2, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20002, rs-50002} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20002} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10001} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10001} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20003} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20003} Parameters : [0]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20003} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20003} executed. 1.155 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20003, rs-50003} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20003, rs-50003} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20003, rs-50003} Result: [1, 上衣, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20003, rs-50003} Result: [2, 裤子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20003, rs-50003} Result: [3, 裙子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20003, rs-50003} Result: [4, 内衣, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20003, rs-50003} Result: [5, 鞋子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20003, rs-50003} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20003} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10001} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10001} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20004} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20004} Parameters : [0]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20004} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20004} executed. 1.7154 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20004, rs-50004} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20004, rs-50004} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20004, rs-50004} Result: [1, 上衣, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20004, rs-50004} Result: [2, 裤子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20004, rs-50004} Result: [3, 裙子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20004, rs-50004} Result: [4, 内衣, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20004, rs-50004} Result: [5, 鞋子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20004, rs-50004} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20004} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10001} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10001} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20005} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20005} Parameters : [0]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20005} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20005} executed. 1.9024 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20005, rs-50005} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20005, rs-50005} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20005, rs-50005} Result: [1, 上衣, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20005, rs-50005} Result: [2, 裤子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20005, rs-50005} Result: [3, 裙子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20005, rs-50005} Result: [4, 内衣, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20005, rs-50005} Result: [5, 鞋子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20005, rs-50005} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20005} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10001} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10001} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20006} created. select *
+        from file where type = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20006} Parameters : [banner]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20006} Types : [VARCHAR]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20006} executed. 2.119 millis. select *
+        from file where type = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20006, rs-50006} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20006, rs-50006} Header: [id, name, url, describe, date, type, position]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20006, rs-50006} Result: [1, baidu, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fqqpublic.qpic.cn%2Fqq_public%2F0%2F0-2401864875-9EC8A9F92679977181AC20547CE6C8F7%2F0%3Ffmt%3Djpg%26size%3D117%26h%3D600%26w%3D900%26ppv%3D1.jpg&refer=http%3A%2Fhttps://img2.baidu.com/it/u=671937847,1721037349&fm=253&fmt=auto&app=138&f=JPEG?w=563&h=500, 百度图片测试, 2022-01-04 10:45:46.0, banner, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fqqpublic.qpic.cn%2Fqq_public%2F0%2F0-2401864875-9EC8A9F92679977181AC20547CE6C8F7%2F0%3Ffmt%3Djpg%26size%3D117%26h%3D600%26w%3D900%26ppv%3D1.jpg&refer=http%3A%2Fhttps://img2.baidu.com/it/u=671937847,1721037349&fm=253&fmt=auto&app=138&f=JPEG?w=563&h=500]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20006, rs-50006} Result: [6, 百度图片2, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5, 百度图片, 2022-01-04 08:44:57.0, banner, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20006, rs-50006} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20006} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10001} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10001} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20007} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20007} Parameters : [0]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20007} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20007} executed. 2.1666 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20007, rs-50007} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20007, rs-50007} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20007, rs-50007} Result: [1, 上衣, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20007, rs-50007} Result: [2, 裤子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20007, rs-50007} Result: [3, 裙子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20007, rs-50007} Result: [4, 内衣, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20007, rs-50007} Result: [5, 鞋子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20007, rs-50007} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20007} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10001} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10001} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20008} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20008} Parameters : [0]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20008} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20008} executed. 2.4342 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20008, rs-50008} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20008, rs-50008} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20008, rs-50008} Result: [1, 上衣, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20008, rs-50008} Result: [2, 裤子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20008, rs-50008} Result: [3, 裙子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20008, rs-50008} Result: [4, 内衣, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20008, rs-50008} Result: [5, 鞋子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20008, rs-50008} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20008} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10001} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10001} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20009} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20009} Parameters : [0]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20009} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20009} executed. 1.0029 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20009, rs-50009} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20009, rs-50009} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20009, rs-50009} Result: [1, 上衣, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20009, rs-50009} Result: [2, 裤子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20009, rs-50009} Result: [3, 裙子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20009, rs-50009} Result: [4, 内衣, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20009, rs-50009} Result: [5, 鞋子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20009, rs-50009} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20009} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10001} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10001} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20010} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20010} Parameters : [0]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20010} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20010} executed. 1.061 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20010, rs-50010} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20010, rs-50010} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20010, rs-50010} Result: [1, 上衣, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20010, rs-50010} Result: [2, 裤子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20010, rs-50010} Result: [3, 裙子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20010, rs-50010} Result: [4, 内衣, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20010, rs-50010} Result: [5, 鞋子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20010, rs-50010} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20010} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10001} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10001} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20011} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20011} Parameters : [0]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20011} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20011} executed. 0.9901 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20011, rs-50011} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20011, rs-50011} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20011, rs-50011} Result: [1, 上衣, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20011, rs-50011} Result: [2, 裤子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20011, rs-50011} Result: [3, 裙子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20011, rs-50011} Result: [4, 内衣, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20011, rs-50011} Result: [5, 鞋子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20011, rs-50011} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20011} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10001} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10001} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20012} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20012} Parameters : [0]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20012} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20012} executed. 3.3438 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20012, rs-50012} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20012, rs-50012} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20012, rs-50012} Result: [1, 上衣, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20012, rs-50012} Result: [2, 裤子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20012, rs-50012} Result: [3, 裙子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20012, rs-50012} Result: [4, 内衣, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20012, rs-50012} Result: [5, 鞋子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20012, rs-50012} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20012} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10001} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10001} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20013} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20013} Parameters : [0]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20013} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20013} executed. 2.303 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20013, rs-50013} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20013, rs-50013} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20013, rs-50013} Result: [1, 上衣, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20013, rs-50013} Result: [2, 裤子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20013, rs-50013} Result: [3, 裙子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20013, rs-50013} Result: [4, 内衣, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20013, rs-50013} Result: [5, 鞋子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20013, rs-50013} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20013} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10001} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10001} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20014} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20014} Parameters : [0]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20014} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20014} executed. 1.7644 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20014, rs-50014} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20014, rs-50014} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20014, rs-50014} Result: [1, 上衣, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20014, rs-50014} Result: [2, 裤子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20014, rs-50014} Result: [3, 裙子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20014, rs-50014} Result: [4, 内衣, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20014, rs-50014} Result: [5, 鞋子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20014, rs-50014} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20014} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10001} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10001} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20015} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20015} Parameters : [0]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20015} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20015} executed. 1.3673 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20015, rs-50015} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20015, rs-50015} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20015, rs-50015} Result: [1, 上衣, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20015, rs-50015} Result: [2, 裤子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20015, rs-50015} Result: [3, 裙子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20015, rs-50015} Result: [4, 内衣, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20015, rs-50015} Result: [5, 鞋子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20015, rs-50015} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20015} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10001} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10001} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002,procId-314} connected
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20016} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20016} Parameters : [0]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20016} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20016} executed. 1.5053 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20016, rs-50016} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20016, rs-50016} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20016, rs-50016} Result: [1, 上衣, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20016, rs-50016} Result: [2, 裤子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20016, rs-50016} Result: [3, 裙子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20016, rs-50016} Result: [4, 内衣, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20016, rs-50016} Result: [5, 鞋子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20016, rs-50016} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20016} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20017} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20017} Parameters : [0]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20017} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20017} executed. 0.9788 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20017, rs-50017} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20017, rs-50017} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20017, rs-50017} Result: [1, 上衣, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20017, rs-50017} Result: [2, 裤子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20017, rs-50017} Result: [3, 裙子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20017, rs-50017} Result: [4, 内衣, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20017, rs-50017} Result: [5, 鞋子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20017, rs-50017} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20017} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20018} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20018} Parameters : [1]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20018} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20018} executed. 1.0466 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20018, rs-50018} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20018, rs-50018} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20018, rs-50018} Result: [6, T恤, 1, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20018, rs-50018} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20018} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20019} created. select *
+        from file where type = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20019} Parameters : [banner]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20019} Types : [VARCHAR]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20019} executed. 2.1541 millis. select *
+        from file where type = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20019, rs-50019} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20019, rs-50019} Header: [id, name, url, describe, date, type, position]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20019, rs-50019} Result: [1, baidu, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fqqpublic.qpic.cn%2Fqq_public%2F0%2F0-2401864875-9EC8A9F92679977181AC20547CE6C8F7%2F0%3Ffmt%3Djpg%26size%3D117%26h%3D600%26w%3D900%26ppv%3D1.jpg&refer=http%3A%2Fhttps://img2.baidu.com/it/u=671937847,1721037349&fm=253&fmt=auto&app=138&f=JPEG?w=563&h=500, 百度图片测试, 2022-01-04 10:45:46.0, banner, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fqqpublic.qpic.cn%2Fqq_public%2F0%2F0-2401864875-9EC8A9F92679977181AC20547CE6C8F7%2F0%3Ffmt%3Djpg%26size%3D117%26h%3D600%26w%3D900%26ppv%3D1.jpg&refer=http%3A%2Fhttps://img2.baidu.com/it/u=671937847,1721037349&fm=253&fmt=auto&app=138&f=JPEG?w=563&h=500]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20019, rs-50019} Result: [6, 百度图片2, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5, 百度图片, 2022-01-04 08:44:57.0, banner, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20019, rs-50019} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20019} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20020} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20020} Parameters : [2]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20020} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20020} executed. 1.3981 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20020, rs-50020} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20020, rs-50020} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20020, rs-50020} Result: [7, 牛仔裤, 2, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20020, rs-50020} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20020} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20021} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20021} Parameters : [1]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20021} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20021} executed. 1.3801 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20021, rs-50021} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20021, rs-50021} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20021, rs-50021} Result: [6, T恤, 1, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20021, rs-50021} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20021} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20022} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20022} Parameters : [3]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20022} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20022} executed. 1.7098 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20022, rs-50022} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20022, rs-50022} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20022, rs-50022} Result: [8, 连衣裙, 3, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20022, rs-50022} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20022} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20023} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20023} Parameters : [4]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20023} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20023} executed. 1.2805 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20023, rs-50023} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20023, rs-50023} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20023, rs-50023} Result: [10, 保暖内衣, 4, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20023, rs-50023} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20023} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20024} created. select *
+        from file where type = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20024} Parameters : [banner]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20024} Types : [VARCHAR]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20024} executed. 1.6339 millis. select *
+        from file where type = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20024, rs-50024} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20024, rs-50024} Header: [id, name, url, describe, date, type, position]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20024, rs-50024} Result: [1, baidu, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fqqpublic.qpic.cn%2Fqq_public%2F0%2F0-2401864875-9EC8A9F92679977181AC20547CE6C8F7%2F0%3Ffmt%3Djpg%26size%3D117%26h%3D600%26w%3D900%26ppv%3D1.jpg&refer=http%3A%2Fhttps://img2.baidu.com/it/u=671937847,1721037349&fm=253&fmt=auto&app=138&f=JPEG?w=563&h=500, 百度图片测试, 2022-01-04 10:45:46.0, banner, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fqqpublic.qpic.cn%2Fqq_public%2F0%2F0-2401864875-9EC8A9F92679977181AC20547CE6C8F7%2F0%3Ffmt%3Djpg%26size%3D117%26h%3D600%26w%3D900%26ppv%3D1.jpg&refer=http%3A%2Fhttps://img2.baidu.com/it/u=671937847,1721037349&fm=253&fmt=auto&app=138&f=JPEG?w=563&h=500]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20024, rs-50024} Result: [6, 百度图片2, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5, 百度图片, 2022-01-04 08:44:57.0, banner, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20024, rs-50024} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20024} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20025} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20025} Parameters : [0]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20025} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20025} executed. 2.0726 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20025, rs-50025} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20025, rs-50025} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20025, rs-50025} Result: [1, 上衣, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20025, rs-50025} Result: [2, 裤子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20025, rs-50025} Result: [3, 裙子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20025, rs-50025} Result: [4, 内衣, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20025, rs-50025} Result: [5, 鞋子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20025, rs-50025} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20025} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20026} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20026} Parameters : [0]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20026} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20026} executed. 1.2931 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20026, rs-50026} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20026, rs-50026} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20026, rs-50026} Result: [1, 上衣, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20026, rs-50026} Result: [2, 裤子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20026, rs-50026} Result: [3, 裙子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20026, rs-50026} Result: [4, 内衣, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20026, rs-50026} Result: [5, 鞋子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20026, rs-50026} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20026} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20027} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20027} Parameters : [1]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20027} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20027} executed. 2.8227 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20027, rs-50027} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20027, rs-50027} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20027, rs-50027} Result: [6, T恤, 1, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20027, rs-50027} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20027} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20028} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20028} Parameters : [2]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20028} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20028} executed. 1.1612 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20028, rs-50028} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20028, rs-50028} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20028, rs-50028} Result: [7, 牛仔裤, 2, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20028, rs-50028} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20028} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20029} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20029} Parameters : [3]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20029} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20029} executed. 1.2221 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20029, rs-50029} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20029, rs-50029} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20029, rs-50029} Result: [8, 连衣裙, 3, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20029, rs-50029} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20029} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20030} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20030} Parameters : [4]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20030} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20030} executed. 1.3138 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20030, rs-50030} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20030, rs-50030} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20030, rs-50030} Result: [10, 保暖内衣, 4, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20030, rs-50030} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20030} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20031} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20031} Parameters : [0]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20031} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20031} executed. 1.013 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20031, rs-50031} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20031, rs-50031} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20031, rs-50031} Result: [1, 上衣, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20031, rs-50031} Result: [2, 裤子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20031, rs-50031} Result: [3, 裙子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20031, rs-50031} Result: [4, 内衣, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20031, rs-50031} Result: [5, 鞋子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20031, rs-50031} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20031} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20032} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20032} Parameters : [0]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20032} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20032} executed. 1.0204 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20032, rs-50032} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20032, rs-50032} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20032, rs-50032} Result: [1, 上衣, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20032, rs-50032} Result: [2, 裤子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20032, rs-50032} Result: [3, 裙子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20032, rs-50032} Result: [4, 内衣, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20032, rs-50032} Result: [5, 鞋子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20032, rs-50032} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20032} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20033} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20033} Parameters : [1]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20033} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20033} executed. 1.1149 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20033, rs-50033} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20033, rs-50033} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20033, rs-50033} Result: [6, T恤, 1, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20033, rs-50033} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20033} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20034} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20034} Parameters : [2]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20034} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20034} executed. 3.7259 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20034, rs-50034} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20034, rs-50034} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20034, rs-50034} Result: [7, 牛仔裤, 2, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20034, rs-50034} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20034} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20035} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20035} Parameters : [3]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20035} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20035} executed. 1.3903 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20035, rs-50035} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20035, rs-50035} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20035, rs-50035} Result: [8, 连衣裙, 3, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20035, rs-50035} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20035} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20036} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20036} Parameters : [4]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20036} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20036} executed. 1.2788 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20036, rs-50036} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20036, rs-50036} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20036, rs-50036} Result: [10, 保暖内衣, 4, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20036, rs-50036} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20036} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20037} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20037} Parameters : [5]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20037} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20037} executed. 0.9746 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20037, rs-50037} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20037, rs-50037} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20037, rs-50037} Result: [9, 运动鞋, 5, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20037, rs-50037} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20037} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20038} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20038} Parameters : [2]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20038} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20038} executed. 2.0749 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20038, rs-50038} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20038, rs-50038} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20038, rs-50038} Result: [7, 牛仔裤, 2, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20038, rs-50038} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20038} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20039} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20039} Parameters : [3]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20039} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20039} executed. 1.2771 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20039, rs-50039} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20039, rs-50039} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20039, rs-50039} Result: [8, 连衣裙, 3, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20039, rs-50039} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20039} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20040} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20040} Parameters : [5]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20040} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20040} executed. 1.2375 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20040, rs-50040} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20040, rs-50040} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20040, rs-50040} Result: [9, 运动鞋, 5, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20040, rs-50040} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20040} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20041} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20041} Parameters : [1]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20041} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20041} executed. 1.2164 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20041, rs-50041} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20041, rs-50041} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20041, rs-50041} Result: [6, T恤, 1, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20041, rs-50041} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20041} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20042} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20042} Parameters : [2]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20042} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20042} executed. 1.6916 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20042, rs-50042} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20042, rs-50042} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20042, rs-50042} Result: [7, 牛仔裤, 2, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20042, rs-50042} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20042} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20043} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20043} Parameters : [3]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20043} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20043} executed. 1.3093 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20043, rs-50043} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20043, rs-50043} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20043, rs-50043} Result: [8, 连衣裙, 3, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20043, rs-50043} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20043} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20044} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20044} Parameters : [4]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20044} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20044} executed. 1.2163 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20044, rs-50044} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20044, rs-50044} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20044, rs-50044} Result: [10, 保暖内衣, 4, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20044, rs-50044} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20044} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10003,procId-317} connected
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10003} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10003, pstmt-20045} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10003, pstmt-20045} Parameters : [0]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10003, pstmt-20045} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10003, pstmt-20045} executed. 1.1893 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10003, pstmt-20045, rs-50045} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10003, pstmt-20045, rs-50045} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10003, pstmt-20045, rs-50045} Result: [1, 上衣, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10003, pstmt-20045, rs-50045} Result: [2, 裤子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10003, pstmt-20045, rs-50045} Result: [3, 裙子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10003, pstmt-20045, rs-50045} Result: [4, 内衣, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10003, pstmt-20045, rs-50045} Result: [5, 鞋子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10003, pstmt-20045, rs-50045} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10003, pstmt-20045} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10003} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10003} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10003, pstmt-20046} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10003, pstmt-20046} Parameters : [0]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10003, pstmt-20046} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10003, pstmt-20046} executed. 0.9186 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10003, pstmt-20046, rs-50046} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10003, pstmt-20046, rs-50046} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10003, pstmt-20046, rs-50046} Result: [1, 上衣, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10003, pstmt-20046, rs-50046} Result: [2, 裤子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10003, pstmt-20046, rs-50046} Result: [3, 裙子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10003, pstmt-20046, rs-50046} Result: [4, 内衣, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10003, pstmt-20046, rs-50046} Result: [5, 鞋子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10003, pstmt-20046, rs-50046} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10003, pstmt-20046} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10003} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10003} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10003, pstmt-20047} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10003, pstmt-20047} Parameters : [1]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10003, pstmt-20047} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10003, pstmt-20047} executed. 0.7412 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10003, pstmt-20047, rs-50047} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10003, pstmt-20047, rs-50047} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10003, pstmt-20047, rs-50047} Result: [6, T恤, 1, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10003, pstmt-20047, rs-50047} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10003, pstmt-20047} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10003} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10003} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10003, pstmt-20048} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10003, pstmt-20048} Parameters : [2]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10003, pstmt-20048} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10003, pstmt-20048} executed. 1.5823 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10003, pstmt-20048, rs-50048} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10003, pstmt-20048, rs-50048} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10003, pstmt-20048, rs-50048} Result: [7, 牛仔裤, 2, https://img1.baidu.com/it/u=554382795,404172800&fm=26&fmt=auto]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10003, pstmt-20048, rs-50048} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10003, pstmt-20048} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10003} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10003} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10003, pstmt-20049} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10003, pstmt-20049} Parameters : [3]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10003, pstmt-20049} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10003, pstmt-20049} executed. 1.229 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10003, pstmt-20049, rs-50049} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10003, pstmt-20049, rs-50049} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10003, pstmt-20049, rs-50049} Result: [8, 连衣裙, 3, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202002%2F02%2F20200202190637_ebtli.jpg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643937992&t=56787dc9d0f711a0cd1e5b84876e42c2]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10003, pstmt-20049, rs-50049} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10003, pstmt-20049} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10003} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10003} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10003, pstmt-20050} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10003, pstmt-20050} Parameters : [4]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10003, pstmt-20050} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10003, pstmt-20050} executed. 1.1554 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10003, pstmt-20050, rs-50050} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10003, pstmt-20050, rs-50050} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10003, pstmt-20050, rs-50050} Result: [10, 保暖内衣, 4, https://img1.baidu.com/it/u=2442691762,2466240857&fm=26&fmt=auto]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10003, pstmt-20050, rs-50050} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10003, pstmt-20050} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10003} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10003} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10003, pstmt-20051} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10003, pstmt-20051} Parameters : [5]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10003, pstmt-20051} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10003, pstmt-20051} executed. 1.133 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10003, pstmt-20051, rs-50051} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10003, pstmt-20051, rs-50051} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10003, pstmt-20051, rs-50051} Result: [9, 运动鞋, 5, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2Fba66b494deeba1e2d6cb1c7bbe59e8f3279a67c7.jpg&refer=http%3A%2F%2Fi0.hdslb.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643938009&t=545db129d5717c5743f5b0c84adde130]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10003, pstmt-20051, rs-50051} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10003, pstmt-20051} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10003} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10003} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10003, pstmt-20052} created. select *
+        from file where type = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10003, pstmt-20052} Parameters : [banner]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10003, pstmt-20052} Types : [VARCHAR]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10003, pstmt-20052} executed. 0.7825 millis. select *
+        from file where type = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10003, pstmt-20052, rs-50052} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10003, pstmt-20052, rs-50052} Header: [id, name, url, describe, date, type, position]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10003, pstmt-20052, rs-50052} Result: [1, baidu, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fqqpublic.qpic.cn%2Fqq_public%2F0%2F0-2401864875-9EC8A9F92679977181AC20547CE6C8F7%2F0%3Ffmt%3Djpg%26size%3D117%26h%3D600%26w%3D900%26ppv%3D1.jpg&refer=http%3A%2Fhttps://img2.baidu.com/it/u=671937847,1721037349&fm=253&fmt=auto&app=138&f=JPEG?w=563&h=500, 百度图片测试, 2022-01-04 10:45:46.0, banner, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fqqpublic.qpic.cn%2Fqq_public%2F0%2F0-2401864875-9EC8A9F92679977181AC20547CE6C8F7%2F0%3Ffmt%3Djpg%26size%3D117%26h%3D600%26w%3D900%26ppv%3D1.jpg&refer=http%3A%2Fhttps://img2.baidu.com/it/u=671937847,1721037349&fm=253&fmt=auto&app=138&f=JPEG?w=563&h=500]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10003, pstmt-20052, rs-50052} Result: [6, 百度图片2, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5, 百度图片, 2022-01-04 08:44:57.0, banner, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10003, pstmt-20052, rs-50052} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10003, pstmt-20052} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10003} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10003} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10001,procId-325} connected
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10001} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20000} created. select *
+        from product where recommendType = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20000} Parameters : [week]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20000} Types : [VARCHAR]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20000} executed. 40.49 millis. select *
+        from product where recommendType = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20000, rs-50000} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20000, rs-50000} Header: [id, name, price, maxPrice, minPrice, covers, photos, title, describt, sales, collect, sendTime, discount, categoryId, guaranteeId, recommendType, new_column, link]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20000, rs-50000} Result: [1, 十点抢劵, null, null, null, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5, null, null, null, null, null, null, null, null, null, week, null, https://www.bilibili.com/]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20000, rs-50000} Result: [2, 好物特卖, null, null, null, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5, null, null, null, null, null, null, null, null, null, week, null, https://www.bilibili.com/]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20000, rs-50000} Result: [3, 内购福利, null, null, null, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5, null, null, null, null, null, null, null, null, null, week, null, https://www.bilibili.com/]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20000, rs-50000} Result: [4, 初秋上市, null, null, null, https://img1.baidu.com/it/u=554382795,404172800&fm=26&fmt=auto, null, null, null, null, null, null, null, null, null, week, null, https://www.bilibili.com/]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10001, pstmt-20000, rs-50000} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10001, pstmt-20000} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10001} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002,procId-326} connected
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20001} created. select *
+        from file where type = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20001} Parameters : [banner]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20001} Types : [VARCHAR]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20001} executed. 2.8291 millis. select *
+        from file where type = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20001, rs-50001} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20001, rs-50001} Header: [id, name, url, describe, date, type, position]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20001, rs-50001} Result: [1, baidu, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fqqpublic.qpic.cn%2Fqq_public%2F0%2F0-2401864875-9EC8A9F92679977181AC20547CE6C8F7%2F0%3Ffmt%3Djpg%26size%3D117%26h%3D600%26w%3D900%26ppv%3D1.jpg&refer=http%3A%2Fhttps://img2.baidu.com/it/u=671937847,1721037349&fm=253&fmt=auto&app=138&f=JPEG?w=563&h=500, 百度图片测试, 2022-01-04 10:45:46.0, banner, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fqqpublic.qpic.cn%2Fqq_public%2F0%2F0-2401864875-9EC8A9F92679977181AC20547CE6C8F7%2F0%3Ffmt%3Djpg%26size%3D117%26h%3D600%26w%3D900%26ppv%3D1.jpg&refer=http%3A%2Fhttps://img2.baidu.com/it/u=671937847,1721037349&fm=253&fmt=auto&app=138&f=JPEG?w=563&h=500]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20001, rs-50001} Result: [6, 百度图片2, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5, 百度图片, 2022-01-04 08:44:57.0, banner, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20001, rs-50001} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20001} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10001} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20002} created. select *
+        from product where recommendType = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20002} Parameters : [week]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20002} Types : [VARCHAR]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20002} executed. 1.642 millis. select *
+        from product where recommendType = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20002, rs-50002} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20002, rs-50002} Header: [id, name, price, maxPrice, minPrice, covers, photos, title, describt, sales, collect, sendTime, discount, categoryId, guaranteeId, recommendType, new_column, link]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20002, rs-50002} Result: [1, 十点抢劵, null, null, null, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5, null, null, null, null, null, null, null, null, null, week, null, https://www.bilibili.com/]
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10003,procId-327} connected
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20002, rs-50002} Result: [2, 好物特卖, null, null, null, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5, null, null, null, null, null, null, null, null, null, week, null, https://www.bilibili.com/]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20002, rs-50002} Result: [3, 内购福利, null, null, null, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5, null, null, null, null, null, null, null, null, null, week, null, https://www.bilibili.com/]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20002, rs-50002} Result: [4, 初秋上市, null, null, null, https://img1.baidu.com/it/u=554382795,404172800&fm=26&fmt=auto, null, null, null, null, null, null, null, null, null, week, null, https://www.bilibili.com/]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20002, rs-50002} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20002} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20003} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20003} Parameters : [0]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20003} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20003} executed. 3.2662 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20003, rs-50003} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20003, rs-50003} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20003, rs-50003} Result: [1, 上衣, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20003, rs-50003} Result: [2, 裤子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20003, rs-50003} Result: [3, 裙子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20003, rs-50003} Result: [4, 内衣, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20003, rs-50003} Result: [5, 鞋子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20003, rs-50003} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20003} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20004} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20004} Parameters : [0]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20004} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20004} executed. 2.0368 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20004, rs-50004} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20004, rs-50004} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20004, rs-50004} Result: [1, 上衣, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20004, rs-50004} Result: [2, 裤子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20004, rs-50004} Result: [3, 裙子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20004, rs-50004} Result: [4, 内衣, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20004, rs-50004} Result: [5, 鞋子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20004, rs-50004} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20004} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20005} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20005} Parameters : [1]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20005} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20005} executed. 2.1682 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20005, rs-50005} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20005, rs-50005} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20005, rs-50005} Result: [6, T恤, 1, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20005, rs-50005} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20005} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20006} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20006} Parameters : [2]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20006} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20006} executed. 1.8494 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20006, rs-50006} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20006, rs-50006} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20006, rs-50006} Result: [7, 牛仔裤, 2, https://img1.baidu.com/it/u=554382795,404172800&fm=26&fmt=auto]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20006, rs-50006} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20006} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20007} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20007} Parameters : [3]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20007} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20007} executed. 2.0835 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20007, rs-50007} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20007, rs-50007} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20007, rs-50007} Result: [8, 连衣裙, 3, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202002%2F02%2F20200202190637_ebtli.jpg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643937992&t=56787dc9d0f711a0cd1e5b84876e42c2]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20007, rs-50007} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20007} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20008} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20008} Parameters : [4]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20008} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20008} executed. 1.6936 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20008, rs-50008} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20008, rs-50008} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20008, rs-50008} Result: [10, 保暖内衣, 4, https://img1.baidu.com/it/u=2442691762,2466240857&fm=26&fmt=auto]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20008, rs-50008} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20008} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20009} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20009} Parameters : [5]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20009} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20009} executed. 1.8264 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20009, rs-50009} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20009, rs-50009} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20009, rs-50009} Result: [9, 运动鞋, 5, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2Fba66b494deeba1e2d6cb1c7bbe59e8f3279a67c7.jpg&refer=http%3A%2F%2Fi0.hdslb.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643938009&t=545db129d5717c5743f5b0c84adde130]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10002, pstmt-20009, rs-50009} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10002, pstmt-20009} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10002} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10003} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10004,procId-330} connected
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10004} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20010} created. select *
+        from file where type = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20010} Parameters : [banner]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20010} Types : [VARCHAR]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20010} executed. 6.5225 millis. select *
+        from file where type = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20010, rs-50010} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20010, rs-50010} Header: [id, name, url, describe, date, type, position]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20010, rs-50010} Result: [1, baidu, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fqqpublic.qpic.cn%2Fqq_public%2F0%2F0-2401864875-9EC8A9F92679977181AC20547CE6C8F7%2F0%3Ffmt%3Djpg%26size%3D117%26h%3D600%26w%3D900%26ppv%3D1.jpg&refer=http%3A%2Fhttps://img2.baidu.com/it/u=671937847,1721037349&fm=253&fmt=auto&app=138&f=JPEG?w=563&h=500, 百度图片测试, 2022-01-05 10:31:49.0, banner, https://qlogo1.store.qq.com/qzone/1970593115/1970593115/100?1596621072]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20010, rs-50010} Result: [6, 百度图片2, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5, 百度图片, 2022-01-05 10:31:50.0, banner, https://qlogo1.store.qq.com/qzone/542918096/542918096/100?1596621072]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20010, rs-50010} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10005,procId-331} connected
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20010} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10004} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10004} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20011} created. select *
+        from product where recommendType = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20011} Parameters : [week]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20011} Types : [VARCHAR]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20011} executed. 1.0158 millis. select *
+        from product where recommendType = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20011, rs-50011} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20011, rs-50011} Header: [id, name, price, maxPrice, minPrice, covers, photos, title, describt, sales, collect, sendTime, discount, categoryId, guaranteeId, recommendType, new_column, link]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20011, rs-50011} Result: [1, 十点抢劵, null, null, null, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5, null, null, null, null, null, null, null, null, null, week, null, https://qlogo1.store.qq.com/qzone/542918096/542918096/100?1596621072]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20011, rs-50011} Result: [2, 好物特卖, null, null, null, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5, null, null, null, null, null, null, null, null, null, week, null, https://qlogo1.store.qq.com/qzone/1970593115/1970593115/100?1596621072]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20011, rs-50011} Result: [3, 内购福利, null, null, null, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5, null, null, null, null, null, null, null, null, null, week, null, https://qlogo1.store.qq.com/qzone/1970593115/1970593115/100?1596621072]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20011, rs-50011} Result: [4, 初秋上市, null, null, null, https://img1.baidu.com/it/u=554382795,404172800&fm=26&fmt=auto, null, null, null, null, null, null, null, null, null, week, null, https://qlogo1.store.qq.com/qzone/1970593115/1970593115/100?1596621072]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20011, rs-50011} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20011} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10004} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10004} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20012} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20012} Parameters : [0]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20012} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20012} executed. 5.2013 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20012, rs-50012} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20012, rs-50012} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20012, rs-50012} Result: [1, 上衣, 0, https://qlogo1.store.qq.com/qzone/542918096/542918096/100?1596621072]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20012, rs-50012} Result: [2, 裤子, 0, https://qlogo1.store.qq.com/qzone/1970593115/1970593115/100?1596621072]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20012, rs-50012} Result: [3, 裙子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20012, rs-50012} Result: [4, 内衣, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20012, rs-50012} Result: [5, 鞋子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20012, rs-50012} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20012} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10004} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10004} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20013} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20013} Parameters : [0]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20013} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20013} executed. 2.0017 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20013, rs-50013} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20013, rs-50013} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20013, rs-50013} Result: [1, 上衣, 0, https://qlogo1.store.qq.com/qzone/542918096/542918096/100?1596621072]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20013, rs-50013} Result: [2, 裤子, 0, https://qlogo1.store.qq.com/qzone/1970593115/1970593115/100?1596621072]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20013, rs-50013} Result: [3, 裙子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20013, rs-50013} Result: [4, 内衣, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20013, rs-50013} Result: [5, 鞋子, 0, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20013, rs-50013} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20013} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10004} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10004} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20014} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20014} Parameters : [1]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20014} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20014} executed. 1.9477 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20014, rs-50014} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20014, rs-50014} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20014, rs-50014} Result: [6, T恤, 1, https://qlogo1.store.qq.com/qzone/542918096/542918096/100?1596621072]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20014, rs-50014} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20014} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10004} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10004} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20015} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20015} Parameters : [2]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20015} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20015} executed. 1.6967 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20015, rs-50015} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20015, rs-50015} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20015, rs-50015} Result: [7, 牛仔裤, 2, https://qlogo1.store.qq.com/qzone/1970593115/1970593115/100?1596621072]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20015, rs-50015} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20015} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10004} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10004} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20016} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20016} Parameters : [3]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20016} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20016} executed. 1.6746 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20016, rs-50016} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20016, rs-50016} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20016, rs-50016} Result: [8, 连衣裙, 3, https://qlogo1.store.qq.com/qzone/542918096/542918096/100?1596621072]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20016, rs-50016} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20016} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10004} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10004} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20017} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20017} Parameters : [4]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20017} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20017} executed. 2.2119 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20017, rs-50017} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20017, rs-50017} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20017, rs-50017} Result: [10, 保暖内衣, 4, https://qlogo1.store.qq.com/qzone/542918096/542918096/100?1596621072]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20017, rs-50017} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20017} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10004} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10004} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20018} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20018} Parameters : [5]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20018} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20018} executed. 1.7847 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20018, rs-50018} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20018, rs-50018} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20018, rs-50018} Result: [9, 运动鞋, 5, https://qlogo1.store.qq.com/qzone/1970593115/1970593115/100?1596621072]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20018, rs-50018} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20018} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10004} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10004} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20019} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20019} Parameters : [4]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20019} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20019} executed. 1.9872 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20019, rs-50019} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20019, rs-50019} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20019, rs-50019} Result: [10, 保暖内衣, 4, https://qlogo1.store.qq.com/qzone/542918096/542918096/100?1596621072]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20019, rs-50019} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20019} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10004} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10004} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20020} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20020} Parameters : [3]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20020} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20020} executed. 1.9061 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20020, rs-50020} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20020, rs-50020} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20020, rs-50020} Result: [8, 连衣裙, 3, https://qlogo1.store.qq.com/qzone/542918096/542918096/100?1596621072]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20020, rs-50020} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20020} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10004} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10004} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20021} created. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20021} Parameters : [2]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20021} Types : [INTEGER]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20021} executed. 1.5048 millis. select *
+        from product_category where pid = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20021, rs-50021} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20021, rs-50021} Header: [id, name, pid, cover]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20021, rs-50021} Result: [7, 牛仔裤, 2, https://qlogo1.store.qq.com/qzone/1970593115/1970593115/100?1596621072]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10004, pstmt-20021, rs-50021} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10004, pstmt-20021} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10004} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10005} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10004} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10006,procId-332} connected
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10006} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10006, pstmt-20022} created. select *
+        from file where type = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10006, pstmt-20022} Parameters : [banner]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10006, pstmt-20022} Types : [VARCHAR]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10006, pstmt-20022} executed. 1.7539 millis. select *
+        from file where type = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10006, pstmt-20022, rs-50022} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10006, pstmt-20022, rs-50022} Header: [id, name, url, describe, date, type, position]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10006, pstmt-20022, rs-50022} Result: [1, baidu, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fqqpublic.qpic.cn%2Fqq_public%2F0%2F0-2401864875-9EC8A9F92679977181AC20547CE6C8F7%2F0%3Ffmt%3Djpg%26size%3D117%26h%3D600%26w%3D900%26ppv%3D1.jpg&refer=http%3A%2Fhttps://img2.baidu.com/it/u=671937847,1721037349&fm=253&fmt=auto&app=138&f=JPEG?w=563&h=500, 百度图片测试, 2022-01-05 10:31:49.0, banner, https://qlogo1.store.qq.com/qzone/1970593115/1970593115/100?1596621072]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10006, pstmt-20022, rs-50022} Result: [6, 百度图片2, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5, 百度图片, 2022-01-05 10:31:50.0, banner, https://qlogo1.store.qq.com/qzone/542918096/542918096/100?1596621072]
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10007,procId-333} connected
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10006, pstmt-20022, rs-50022} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10006, pstmt-20022} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10007} pool-connect
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10006} pool-recycle
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10007, pstmt-20023} created. select *
+        from product where recommendType = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10007, pstmt-20023} Parameters : [week]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10007, pstmt-20023} Types : [VARCHAR]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10007, pstmt-20023} executed. 1.3291 millis. select *
+        from product where recommendType = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10007, pstmt-20023, rs-50023} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10007, pstmt-20023, rs-50023} Header: [id, name, price, maxPrice, minPrice, covers, photos, title, describt, sales, collect, sendTime, discount, categoryId, guaranteeId, recommendType, new_column, link]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10007, pstmt-20023, rs-50023} Result: [1, 十点抢劵, null, null, null, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5, null, null, null, null, null, null, null, null, null, week, null, https://qlogo1.store.qq.com/qzone/542918096/542918096/100?1596621072]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10007, pstmt-20023, rs-50023} Result: [2, 好物特卖, null, null, null, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5, null, null, null, null, null, null, null, null, null, week, null, https://qlogo1.store.qq.com/qzone/1970593115/1970593115/100?1596621072]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10007, pstmt-20023, rs-50023} Result: [3, 内购福利, null, null, null, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5, null, null, null, null, null, null, null, null, null, week, null, https://qlogo1.store.qq.com/qzone/1970593115/1970593115/100?1596621072]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10007, pstmt-20023, rs-50023} Result: [4, 初秋上市, null, null, null, https://img1.baidu.com/it/u=554382795,404172800&fm=26&fmt=auto, null, null, null, null, null, null, null, null, null, week, null, https://qlogo1.store.qq.com/qzone/1970593115/1970593115/100?1596621072]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10007, pstmt-20023, rs-50023} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10007, pstmt-20023} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10007} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10007} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10007, pstmt-20024} created. select *
+        from file where type = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10007, pstmt-20024} Parameters : [banner]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10007, pstmt-20024} Types : [VARCHAR]
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10006} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10006, pstmt-20025} created. select *
+        from product where recommendType = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10007, pstmt-20024} executed. 0.9254 millis. select *
+        from file where type = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10006, pstmt-20025} Parameters : [week]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10007, pstmt-20024, rs-50024} open
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10006, pstmt-20025} Types : [VARCHAR]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10007, pstmt-20024, rs-50024} Header: [id, name, url, describe, date, type, position]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10007, pstmt-20024, rs-50024} Result: [1, baidu, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fqqpublic.qpic.cn%2Fqq_public%2F0%2F0-2401864875-9EC8A9F92679977181AC20547CE6C8F7%2F0%3Ffmt%3Djpg%26size%3D117%26h%3D600%26w%3D900%26ppv%3D1.jpg&refer=http%3A%2Fhttps://img2.baidu.com/it/u=671937847,1721037349&fm=253&fmt=auto&app=138&f=JPEG?w=563&h=500, 百度图片测试, 2022-01-05 10:31:49.0, banner, https://qlogo1.store.qq.com/qzone/1970593115/1970593115/100?1596621072]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10006, pstmt-20025} executed. 1.333 millis. select *
+        from product where recommendType = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10007, pstmt-20024, rs-50024} Result: [6, 百度图片2, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5, 百度图片, 2022-01-05 10:31:50.0, banner, https://qlogo1.store.qq.com/qzone/542918096/542918096/100?1596621072]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10006, pstmt-20025, rs-50025} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10006, pstmt-20025, rs-50025} Header: [id, name, price, maxPrice, minPrice, covers, photos, title, describt, sales, collect, sendTime, discount, categoryId, guaranteeId, recommendType, new_column, link]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10007, pstmt-20024, rs-50024} closed
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10006, pstmt-20025, rs-50025} Result: [1, 十点抢劵, null, null, null, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5, null, null, null, null, null, null, null, null, null, week, null, https://qlogo1.store.qq.com/qzone/542918096/542918096/100?1596621072]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10007, pstmt-20024} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10007} pool-recycle
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10006, pstmt-20025, rs-50025} Result: [2, 好物特卖, null, null, null, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5, null, null, null, null, null, null, null, null, null, week, null, https://qlogo1.store.qq.com/qzone/1970593115/1970593115/100?1596621072]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10006, pstmt-20025, rs-50025} Result: [3, 内购福利, null, null, null, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5, null, null, null, null, null, null, null, null, null, week, null, https://qlogo1.store.qq.com/qzone/1970593115/1970593115/100?1596621072]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10006, pstmt-20025, rs-50025} Result: [4, 初秋上市, null, null, null, https://img1.baidu.com/it/u=554382795,404172800&fm=26&fmt=auto, null, null, null, null, null, null, null, null, null, week, null, https://qlogo1.store.qq.com/qzone/1970593115/1970593115/100?1596621072]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10006, pstmt-20025, rs-50025} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10006, pstmt-20025} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10006} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10006} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10007} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10008,procId-335} connected
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10008} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10008, pstmt-20026} created. select *
+        from file where type = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10008, pstmt-20026} Parameters : [banner]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10008, pstmt-20026} Types : [VARCHAR]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10008, pstmt-20026} executed. 2.4758 millis. select *
+        from file where type = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10008, pstmt-20026, rs-50026} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10008, pstmt-20026, rs-50026} Header: [id, name, url, describe, date, type, position]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10008, pstmt-20026, rs-50026} Result: [1, baidu, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fqqpublic.qpic.cn%2Fqq_public%2F0%2F0-2401864875-9EC8A9F92679977181AC20547CE6C8F7%2F0%3Ffmt%3Djpg%26size%3D117%26h%3D600%26w%3D900%26ppv%3D1.jpg&refer=http%3A%2Fhttps://img2.baidu.com/it/u=671937847,1721037349&fm=253&fmt=auto&app=138&f=JPEG?w=563&h=500, 百度图片测试, 2022-01-05 10:31:49.0, banner, https://qlogo1.store.qq.com/qzone/1970593115/1970593115/100?1596621072]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10008, pstmt-20026, rs-50026} Result: [6, 百度图片2, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5, 百度图片, 2022-01-05 10:31:50.0, banner, https://qlogo1.store.qq.com/qzone/542918096/542918096/100?1596621072]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10008, pstmt-20026, rs-50026} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10008, pstmt-20026} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10009,procId-336} connected
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10008} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10008} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10008, pstmt-20027} created. select *
+        from product where recommendType = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10008, pstmt-20027} Parameters : [week]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10008, pstmt-20027} Types : [VARCHAR]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10008, pstmt-20027} executed. 1.6669 millis. select *
+        from product where recommendType = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10008, pstmt-20027, rs-50027} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10008, pstmt-20027, rs-50027} Header: [id, name, price, maxPrice, minPrice, covers, photos, title, describt, sales, collect, sendTime, discount, categoryId, guaranteeId, recommendType, new_column, link]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10008, pstmt-20027, rs-50027} Result: [1, 十点抢劵, null, null, null, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5, null, null, null, null, null, null, null, null, null, week, null, https://www.usts.edu.cn/images/dt.jpg]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10008, pstmt-20027, rs-50027} Result: [2, 好物特卖, null, null, null, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5, null, null, null, null, null, null, null, null, null, week, null, https://www.usts.edu.cn/images/dt.jpg]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10008, pstmt-20027, rs-50027} Result: [3, 内购福利, null, null, null, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5, null, null, null, null, null, null, null, null, null, week, null, https://www.usts.edu.cn/images/dt.jpg]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10008, pstmt-20027, rs-50027} Result: [4, 初秋上市, null, null, null, https://img1.baidu.com/it/u=554382795,404172800&fm=26&fmt=auto, null, null, null, null, null, null, null, null, null, week, null, https://www.usts.edu.cn/images/dt.jpg]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10008, pstmt-20027, rs-50027} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10008, pstmt-20027} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10008} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10008} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10008, pstmt-20028} created. select *
+        from file where type = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10008, pstmt-20028} Parameters : [banner]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10008, pstmt-20028} Types : [VARCHAR]
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10009} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10009, pstmt-20029} created. select *
+        from product where recommendType = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10008, pstmt-20028} executed. 1.1181 millis. select *
+        from file where type = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10008, pstmt-20028, rs-50028} open
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10009, pstmt-20029} Parameters : [week]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10008, pstmt-20028, rs-50028} Header: [id, name, url, describe, date, type, position]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10009, pstmt-20029} Types : [VARCHAR]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10008, pstmt-20028, rs-50028} Result: [1, baidu, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fqqpublic.qpic.cn%2Fqq_public%2F0%2F0-2401864875-9EC8A9F92679977181AC20547CE6C8F7%2F0%3Ffmt%3Djpg%26size%3D117%26h%3D600%26w%3D900%26ppv%3D1.jpg&refer=http%3A%2Fhttps://img2.baidu.com/it/u=671937847,1721037349&fm=253&fmt=auto&app=138&f=JPEG?w=563&h=500, 百度图片测试, 2022-01-05 10:38:53.0, banner, https://www.usts.edu.cn/images/dt.jpg]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10008, pstmt-20028, rs-50028} Result: [6, 百度图片2, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5, 百度图片, 2022-01-05 10:31:50.0, banner, https://qlogo1.store.qq.com/qzone/542918096/542918096/100?1596621072]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10008, pstmt-20028, rs-50028} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10008, pstmt-20028} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10008} pool-recycle
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10009, pstmt-20029} executed. 2.8479 millis. select *
+        from product where recommendType = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10009, pstmt-20029, rs-50029} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10009, pstmt-20029, rs-50029} Header: [id, name, price, maxPrice, minPrice, covers, photos, title, describt, sales, collect, sendTime, discount, categoryId, guaranteeId, recommendType, new_column, link]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10009, pstmt-20029, rs-50029} Result: [1, 十点抢劵, null, null, null, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5, null, null, null, null, null, null, null, null, null, week, null, https://www.usts.edu.cn/images/dt.jpg]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10009, pstmt-20029, rs-50029} Result: [2, 好物特卖, null, null, null, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5, null, null, null, null, null, null, null, null, null, week, null, https://www.usts.edu.cn/images/dt.jpg]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10009, pstmt-20029, rs-50029} Result: [3, 内购福利, null, null, null, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5, null, null, null, null, null, null, null, null, null, week, null, https://www.usts.edu.cn/images/dt.jpg]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10009, pstmt-20029, rs-50029} Result: [4, 初秋上市, null, null, null, https://img1.baidu.com/it/u=554382795,404172800&fm=26&fmt=auto, null, null, null, null, null, null, null, null, null, week, null, https://www.usts.edu.cn/images/dt.jpg]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10009, pstmt-20029, rs-50029} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10009, pstmt-20029} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10009} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10009} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10009, pstmt-20030} created. select *
+        from file where type = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10009, pstmt-20030} Parameters : [banner]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10009, pstmt-20030} Types : [VARCHAR]
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10008} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10008, pstmt-20031} created. select *
+        from product where recommendType = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10008, pstmt-20031} Parameters : [week]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10008, pstmt-20031} Types : [VARCHAR]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10009, pstmt-20030} executed. 0.9465 millis. select *
+        from file where type = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10009, pstmt-20030, rs-50030} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10009, pstmt-20030, rs-50030} Header: [id, name, url, describe, date, type, position]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10009, pstmt-20030, rs-50030} Result: [1, baidu, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fqqpublic.qpic.cn%2Fqq_public%2F0%2F0-2401864875-9EC8A9F92679977181AC20547CE6C8F7%2F0%3Ffmt%3Djpg%26size%3D117%26h%3D600%26w%3D900%26ppv%3D1.jpg&refer=http%3A%2Fhttps://img2.baidu.com/it/u=671937847,1721037349&fm=253&fmt=auto&app=138&f=JPEG?w=563&h=500, 百度图片测试, 2022-01-05 10:38:53.0, banner, https://www.usts.edu.cn/images/dt.jpg]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10008, pstmt-20031} executed. 0.6605 millis. select *
+        from product where recommendType = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10008, pstmt-20031, rs-50031} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10008, pstmt-20031, rs-50031} Header: [id, name, price, maxPrice, minPrice, covers, photos, title, describt, sales, collect, sendTime, discount, categoryId, guaranteeId, recommendType, new_column, link]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10009, pstmt-20030, rs-50030} Result: [6, 百度图片2, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5, 百度图片, 2022-01-05 10:31:50.0, banner, https://qlogo1.store.qq.com/qzone/542918096/542918096/100?1596621072]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10008, pstmt-20031, rs-50031} Result: [1, 十点抢劵, null, null, null, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5, null, null, null, null, null, null, null, null, null, week, null, https://www.usts.edu.cn/images/dt.jpg]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10009, pstmt-20030, rs-50030} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10009, pstmt-20030} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10009} pool-recycle
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10008, pstmt-20031, rs-50031} Result: [2, 好物特卖, null, null, null, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5, null, null, null, null, null, null, null, null, null, week, null, https://www.usts.edu.cn/images/dt.jpg]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10008, pstmt-20031, rs-50031} Result: [3, 内购福利, null, null, null, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5, null, null, null, null, null, null, null, null, null, week, null, https://www.usts.edu.cn/images/dt.jpg]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10008, pstmt-20031, rs-50031} Result: [4, 初秋上市, null, null, null, https://img1.baidu.com/it/u=554382795,404172800&fm=26&fmt=auto, null, null, null, null, null, null, null, null, null, week, null, https://www.usts.edu.cn/images/dt.jpg]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10008, pstmt-20031, rs-50031} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10008, pstmt-20031} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10008} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10008} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10008, pstmt-20032} created. select *
+        from product where recommendType = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10008, pstmt-20032} Parameters : [week]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10008, pstmt-20032} Types : [VARCHAR]
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10009} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10009, pstmt-20033} created. select *
+        from file where type = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10009, pstmt-20033} Parameters : [banner]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10009, pstmt-20033} Types : [VARCHAR]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10009, pstmt-20033} executed. 0.4885 millis. select *
+        from file where type = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10008, pstmt-20032} executed. 1.0444 millis. select *
+        from product where recommendType = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10009, pstmt-20033, rs-50032} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10008, pstmt-20032, rs-50033} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10009, pstmt-20033, rs-50032} Header: [id, name, url, describe, date, type, position]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10008, pstmt-20032, rs-50033} Header: [id, name, price, maxPrice, minPrice, covers, photos, title, describt, sales, collect, sendTime, discount, categoryId, guaranteeId, recommendType, new_column, link]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10008, pstmt-20032, rs-50033} Result: [1, 十点抢劵, null, null, null, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5, null, null, null, null, null, null, null, null, null, week, null, https://www.usts.edu.cn/images/dt.jpg]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10009, pstmt-20033, rs-50032} Result: [1, baidu, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fqqpublic.qpic.cn%2Fqq_public%2F0%2F0-2401864875-9EC8A9F92679977181AC20547CE6C8F7%2F0%3Ffmt%3Djpg%26size%3D117%26h%3D600%26w%3D900%26ppv%3D1.jpg&refer=http%3A%2Fhttps://img2.baidu.com/it/u=671937847,1721037349&fm=253&fmt=auto&app=138&f=JPEG?w=563&h=500, 百度图片测试, 2022-01-05 10:38:53.0, banner, https://www.usts.edu.cn/images/dt.jpg]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10008, pstmt-20032, rs-50033} Result: [2, 好物特卖, null, null, null, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5, null, null, null, null, null, null, null, null, null, week, null, https://www.usts.edu.cn/images/dt.jpg]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10009, pstmt-20033, rs-50032} Result: [6, 百度图片2, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5, 百度图片, 2022-01-05 10:31:50.0, banner, https://qlogo1.store.qq.com/qzone/542918096/542918096/100?1596621072]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10008, pstmt-20032, rs-50033} Result: [3, 内购福利, null, null, null, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5, null, null, null, null, null, null, null, null, null, week, null, https://www.usts.edu.cn/images/dt.jpg]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10008, pstmt-20032, rs-50033} Result: [4, 初秋上市, null, null, null, https://img1.baidu.com/it/u=554382795,404172800&fm=26&fmt=auto, null, null, null, null, null, null, null, null, null, week, null, https://www.usts.edu.cn/images/dt.jpg]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10008, pstmt-20032, rs-50033} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10008, pstmt-20032} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10008} pool-recycle
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10009, pstmt-20033, rs-50032} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10009, pstmt-20033} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10009} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10009} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10008} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10010,procId-337} connected
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10010} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10010, pstmt-20034} created. select *
+        from product where recommendType = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10010, pstmt-20034} Parameters : [week]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10010, pstmt-20034} Types : [VARCHAR]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10010, pstmt-20034} executed. 2.4965 millis. select *
+        from product where recommendType = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10010, pstmt-20034, rs-50034} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10010, pstmt-20034, rs-50034} Header: [id, name, price, maxPrice, minPrice, covers, photos, title, describt, sales, collect, sendTime, discount, categoryId, guaranteeId, recommendType, new_column, link]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10010, pstmt-20034, rs-50034} Result: [1, 十点抢劵, null, null, null, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5, null, null, null, null, null, null, null, null, null, week, null, https://www.usts.edu.cn/images/dt.jpg]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10010, pstmt-20034, rs-50034} Result: [2, 好物特卖, null, null, null, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5, null, null, null, null, null, null, null, null, null, week, null, https://www.usts.edu.cn/images/dt.jpg]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10010, pstmt-20034, rs-50034} Result: [3, 内购福利, null, null, null, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5, null, null, null, null, null, null, null, null, null, week, null, https://www.usts.edu.cn/images/dt.jpg]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10010, pstmt-20034, rs-50034} Result: [4, 初秋上市, null, null, null, https://img1.baidu.com/it/u=554382795,404172800&fm=26&fmt=auto, null, null, null, null, null, null, null, null, null, week, null, https://www.usts.edu.cn/images/dt.jpg]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10010, pstmt-20034, rs-50034} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10010, pstmt-20034} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10011,procId-338} connected
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10010} pool-recycle
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10010} pool-connect
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10010, pstmt-20035} created. select *
+        from file where type = ?;
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10010, pstmt-20035} Parameters : [banner]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10010, pstmt-20035} Types : [VARCHAR]
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10010, pstmt-20035} executed. 1.1588 millis. select *
+        from file where type = ?;
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10010, pstmt-20035, rs-50035} open
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10010, pstmt-20035, rs-50035} Header: [id, name, url, describe, date, type, position]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10010, pstmt-20035, rs-50035} Result: [1, baidu, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fqqpublic.qpic.cn%2Fqq_public%2F0%2F0-2401864875-9EC8A9F92679977181AC20547CE6C8F7%2F0%3Ffmt%3Djpg%26size%3D117%26h%3D600%26w%3D900%26ppv%3D1.jpg&refer=http%3A%2Fhttps://img2.baidu.com/it/u=671937847,1721037349&fm=253&fmt=auto&app=138&f=JPEG?w=563&h=500, 百度图片测试, 2022-01-05 10:38:53.0, banner, https://www.usts.edu.cn/images/dt.jpg]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10010, pstmt-20035, rs-50035} Result: [6, 百度图片2, https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F17%2F20160617195313_wAm4X.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643848989&t=2dd52372d0b828175a27fb07eabc00d5, 百度图片, 2022-01-05 10:31:50.0, banner, https://qlogo1.store.qq.com/qzone/542918096/542918096/100?1596621072]
+[DEBUG][22-01-05][druid.sql.ResultSet]{conn-10010, pstmt-20035, rs-50035} closed
+[DEBUG][22-01-05][druid.sql.Statement]{conn-10010, pstmt-20035} closed
+[DEBUG][22-01-05][druid.sql.Connection]{conn-10010} pool-recycle
