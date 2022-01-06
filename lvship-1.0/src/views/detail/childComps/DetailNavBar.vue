@@ -33,6 +33,7 @@ export default {
   },
   methods: {
     backClick() {
+      console.log("点击啦");
       this.$router.back()
     },
     detailTitleClick(index) {

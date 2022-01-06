@@ -31,6 +31,8 @@ public class Product {
     private BigDecimal maxPrice;
     @ApiModelProperty("商品最小价格")
     private BigDecimal minPrice;
+    @ApiModelProperty("商品折扣")
+    private Integer discount;
     @ApiModelProperty("商品封面图")
     private String covers;
     @ApiModelProperty("商品详情图")
@@ -48,9 +50,11 @@ public class Product {
     @ApiModelProperty("商品分类id")
     private int categoryId;
     @ApiModelProperty("商品的保证id")
-    private String guaranteeId;
+    private String services;
     @ApiModelProperty("商品推荐类型,流行：pop。新款：new。精选：sell。本周推荐：week。")
     private String recommendType;
     @ApiModelProperty("链接")
     private String link;
+    @ApiModelProperty("店铺id")
+    private int shopId;
 }

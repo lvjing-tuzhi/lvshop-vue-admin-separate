@@ -39,7 +39,6 @@ export default {
   },
   methods: {
     swiperImg(item) {
-      console.log(item);
       return item.position || item
     },
     swiperLoad() {

@@ -1,30 +1,23 @@
 import {request} from "./request";
+import {myLog, StringToArray} from "@/common/utils";
 
+//
 export function getDetail(id) {
     return request({
         url: '/product/'+id
     })
 }
 
-// export function getDetail (iid) {
-//     return request({
-//         url: '/detail/',
-//         params: {
-//             iid
-//         }
-//     })
-// }
-//
 export class Goods {
-    constructor(itemInfo, columns, services) {
-        this.title = itemInfo.title;
-        this.desc = itemInfo.desc;
-        this.newPrice = itemInfo.price;
-        this.oldPrice = itemInfo.oldPrice;
-        this.discount = itemInfo.discountDesc;
-        this.columns = columns;
-        this.services = services;
-        this.realPrice = itemInfo.lowNowPrice;
+    constructor(data) {
+        this.title = data.name;
+        this.desc = data.describt;
+        this.newPrice = "￥"+data.price * data.discount * 0.1 + "~￥" + data.maxPrice;
+        this.oldPrice = data.price;
+        this.discount = data.discount;
+        this.columns = ["销量 "+data.sales,"收藏 "+data.collect,data.sendTime+" 时发货"];
+        this.services = StringToArray(data.services);
+        this.realPrice = data.minPrice;
     }
 }
 export class GoodsParam {

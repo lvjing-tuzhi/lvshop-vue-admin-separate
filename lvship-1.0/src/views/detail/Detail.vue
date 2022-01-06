@@ -5,7 +5,7 @@
       <swiper :swiper-item="goodsBanner" h="240px" img-width="100%" @swiperLoad="detailLoad"/>
       <detail-base-info :goods="goods"/>
       <detail-shop-info :shop="goodsShop"/>
-      <detail-goods-info :detail-info="detailInfo" @goodsInfoLoad="detailLoad" class="goods-info"/>
+<!--      <detail-goods-info :detail-info="detailInfo" @goodsInfoLoad="detailLoad" class="goods-info"/>-->
       <detail-param-info :param-info="paramInfo" ref="param"/>
       <detail-comment :comment-info="commentInfo" ref="comment"/>
       <good-list :goods="detailRecommend" ref="recommend" @goodLoad="detailLoad"/>
@@ -24,7 +24,7 @@ import Swiper from "../../components/common/swiper/Swiper";
 import DetailBottom from "./childComps/DetailBottom";
 import DetailBaseInfo from "./childComps/DetailBaseInfo";
 import DetailShopInfo from "./childComps/DetailShopInfo";
-import {debounce,photosToArray} from "../../common/utils";
+import {debounce,StringToArray,myLog} from "../../common/utils";
 import DetailGoodsInfo from "./childComps/DetailGoodsInfo";
 import DetailParamInfo from "./childComps/DetailParamInfo";
 import DetailComment from "./childComps/DetailComment";
@@ -92,11 +92,11 @@ export default {
       }
     },
     addCart() {
-      this.product.iid = this.iid
-      this.product.img = this.topImageOne
-      this.product.title = this.goods.title
-      this.product.desc = this.goods.desc
-      this.product.newPrice = this.goods.realPrice
+      this.product.iid = this.goods.id
+      this.product.img = this.goods.covers
+      this.product.title = this.goods.name
+      this.product.desc = this.goods.describt
+      this.product.newPrice = this.goods.newPrice
       this.$store.dispatch('addCart',this.product).then( res => {
         this.toastMessage = res
         this.toastShow = true
@@ -110,16 +110,13 @@ export default {
         let data = res.result
         this.iid = data.id
         this.topImageOne = data.covers
-        this.goodsBanner = photosToArray(data.photos)
-        // this.iid = iid
-        // this.topImageOne = data.itemInfo.topImages[0]
-        // this.goodsBanner = data.itemInfo.topImages
-        this.goods = new Goods(data.itemInfo,data.columns,data.shopInfo.services)
+        this.goodsBanner = StringToArray(data.photos)
+        this.goods = new Goods(data)
         this.goodsShop = data.shopInfo
-        this.detailInfo = data.detailInfo
-        this.paramInfo = new GoodsParam(data.itemParams.info,data.itemParams.rule)
+        this.detailInfo = data
+        // this.paramInfo = new GoodsParam(data.itemParams.info,data.itemParams.rule)
         // if (data.rate.cRate !== 0) {
-          this.commentInfo = data.rate.list[0];
+        //   this.commentInfo = data.rate.list[0];
         // }
       })
     },

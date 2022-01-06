@@ -1,7 +1,13 @@
 //公共方法
 
+//打印
+export function myLog(str,data) {
+    console.log("======" + str + "======");
+    console.log(data);
+}
+
 // 图片字符分割成数组
-export function photosToArray(data) {
+export function StringToArray(data) {
     return data.split("吕竟的分隔符")
 }
 
