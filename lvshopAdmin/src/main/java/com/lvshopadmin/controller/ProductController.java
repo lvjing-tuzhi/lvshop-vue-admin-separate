@@ -38,4 +38,11 @@ public class ProductController {
     public Result selectById(@PathVariable("id") int id) {
         return new Result(true,StatusCode.OK,"查询成功",productService.selectById(id));
     }
+
+    @GetMapping("/recommend/{recommendType}")
+    @ApiOperation("根据recommendType查询所有商品")
+    @ApiImplicitParam(name = "recommendType", value = "商品推荐类型,流行：pop。新款：new。精选：sell。本周推荐：week。")
+    public Result selectType(@PathVariable("recommendType") String recommendType) {
+        return new Result(true,StatusCode.OK,"查询成功",productService.selectByRecommendType(recommendType));
+    }
 }

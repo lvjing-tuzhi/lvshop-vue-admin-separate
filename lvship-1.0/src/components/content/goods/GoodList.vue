@@ -1,11 +1,12 @@
 <template>
   <div class="good-list">
-    <good-list-item v-for="item in goods" :goodListItem="item" :key="goods.id" @goodLoad="goodLoad"/>
+    <good-list-item v-for="item in goods" :goodListItem="item" :key="item.id" @goodLoad="goodLoad" @click="sendNewProductId(item)"/>
   </div>
 </template>
 
 <script>
 import GoodListItem from "./GoodListItem";
+import {myLog} from "@/common/utils";
 export default {
   name: "GoodList",
   components: {
@@ -25,6 +26,9 @@ export default {
     goodLoad() {
       this.$emit('goodLoad')
     },
+    sendNewProductId(item) {
+      this.$emit('newProductId',item.id)
+    }
   }
 }
 </script>

@@ -7,10 +7,7 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @program: lvshopAdmin
@@ -20,8 +17,9 @@ import org.springframework.web.bind.annotation.RestController;
  **/
 
 @RestController
-@Api(tags = "商城 接口")
+@Api(tags = "店铺接口")
 @RequestMapping("/shop")
+@CrossOrigin
 public class ShopController {
 
     @Autowired

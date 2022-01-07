@@ -1,7 +1,7 @@
 <template>
   <div class="shop-info">
     <div class="shop-top">
-      <img :src="shop.shopLogo" />
+      <img :src="shop.cover" />
       <span class="title">{{ shop.name }}</span>
     </div>
     <div class="shop-middle">
@@ -14,22 +14,36 @@
         </div>
         <div class="info-goods">
           <div class="goods-count">
-            {{ shop.cFans }}
+            {{ shop.productNumber }}
           </div>
           <div class="goods-text">全部宝贝</div>
         </div>
       </div>
       <div class="shop-middle-item shop-middle-right">
         <table>
-          <tr v-for="(item, index) in shop.score" :key="index">
-            <td>{{ item.name }}</td>
-            <td class="score" :class="{ 'score-better': item.isBetter }">
-              {{ item.score }}
+          <tr>
+            <td>描述相符</td>
+            <td class="score" :class="isScoreBetterClass(shop.descript)">
+              {{ shop.descript}}
             </td>
-            <td class="better" :class="{ 'better-more': item.isBetter }">
-              <span>{{ item.isBetter ? "高" : "低" }}</span>
-            </td>
+            <td class="better" :class="isBetterClass(shop.descript)"><span>{{isBetter(shop.descript)}}</span></td>
           </tr>
+          <tr>
+            <td>价格合理</td>
+            <td class="score" :class="isScoreBetterClass(shop.price)">
+              {{ shop.price}}
+            </td>
+            <td class="better" :class="isBetterClass(shop.price)"><span>{{isBetter(shop.price)}}</span></td>
+          </tr>
+<!--          <tr v-for="(item, index) in shop.score" :key="index">-->
+<!--            <td>{{ item.name }}</td>-->
+<!--            <td class="score" :class="{ 'score-better': item.isBetter }">-->
+<!--              {{ item.score }}-->
+<!--            </td>-->
+<!--            <td class="better" :class="{ 'better-more': item.isBetter }">-->
+<!--              <span>{{ item.isBetter ? "高" : "低" }}</span>-->
+<!--            </td>-->
+<!--          </tr>-->
         </table>
       </div>
     </div>
@@ -52,9 +66,24 @@ export default {
   },
   computed: {
     sellsCount () {
-      const value = this.shop.cSells
+      const value = this.shop.sales
       if(value < 10000) return value;
       else return parseInt(value/10000) + '万'
+    },
+    isBetter() {
+      return function (number) {
+        return (number > 4.8 ) ? '高' : '低'
+      }
+    },
+    isBetterClass() {
+      return function (number) {
+        return (number > 4.8 ) ? 'better-more' : ''
+      }
+    },
+    isScoreBetterClass() {
+      return function (number) {
+        return (number > 4.8 ) ? 'score-better' : ''
+      }
     }
   }
 };

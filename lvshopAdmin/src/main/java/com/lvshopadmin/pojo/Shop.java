@@ -26,6 +26,8 @@ public class Shop {
     private String cover;
     @ApiModelProperty("价格合理评分")
     private String price;
+    @ApiModelProperty("描述相符评分")
+    private String descript;
     @ApiModelProperty("店铺总销量")
     private String sales;
     @ApiModelProperty("店铺全部商品数量")

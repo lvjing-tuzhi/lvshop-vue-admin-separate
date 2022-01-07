@@ -1,7 +1,7 @@
 <template>
   <div class="good-list-item" @click="goodClick">
     <img :src="showImage" @load="goodLoad">
-    <div class="good-title">{{goodListItem.title}}</div>
+    <div class="good-title">{{goodListItem.name}}</div>
     <div class="good-price">
       {{goodListItem.price}}
       <span><img src="~/assets/img/common/collect.svg">{{goodListItem.cfav}}</span>
@@ -31,6 +31,7 @@ export default {
       this.$emit('goodLoad')
     },
     goodClick() {
+      console.log('点击aa啦');
       this.$router.push('/detail/'+this.goodListItem.id)
     }
   }

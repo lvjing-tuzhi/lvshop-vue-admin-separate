@@ -7,7 +7,7 @@
       <div class="cart-item-title">{{cartItem.title}}</div>
       <div class="cart-item-goods-content">{{cartItem.desc}}</div>
       <div class="cart-item-price">
-        ￥{{cartItem.newPrice}}
+        {{cartItem.newPrice}}
         <span>x{{cartItem.count}}</span>
       </div>
     </div>

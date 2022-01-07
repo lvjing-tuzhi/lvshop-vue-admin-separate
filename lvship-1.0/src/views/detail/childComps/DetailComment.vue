@@ -1,18 +1,22 @@
 <template>
-  <div class="detail-comment">
-    <div class="detail-comment-title">
-      用户评价
-      <span>更多</span>
+  <div v-if="commentInfo.length > 0">
+    <div class="detail-comment">
+      <div class="detail-comment-title">
+        用户评价
+        <span>更多</span>
+      </div>
+      <div class="detail-user">
+        <img :src="avatar">
+        <div class="user-name">{{uname}}</div>
+      </div>
+      <div class="user-content">{{comment}}</div>
     </div>
-    <div class="detail-user">
-      <img :src="avatar">
-      <div class="user-name">{{uname}}</div>
-    </div>
-    <div class="user-content">{{comment.content}}</div>
   </div>
 </template>
 
 <script>
+import {myLog} from "@/common/utils";
+
 export default {
   name: "DetailComment",
   props: {
@@ -26,15 +30,14 @@ export default {
     }
   },
   computed: {
-    avatar() {
-      // console.log(typeof(this.commentInfo.user.uname));
-      if(typeof(this.commentInfo['user']) == "object") return this.commentInfo.user.avatar
+    avatar: function () {
+      return this.commentInfo[0].user.url
     },
     uname() {
-      if(typeof(this.commentInfo['user']) == "object") return this.commentInfo.user.uname
+      return this.commentInfo[0].user.name
     },
     comment() {
-      if(typeof(this.commentInfo) == "object") return this.commentInfo
+      return this.commentInfo[0].judge
     }
   },
 }

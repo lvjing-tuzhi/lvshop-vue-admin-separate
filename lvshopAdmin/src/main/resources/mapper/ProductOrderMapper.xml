@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lvshopadmin.mapper.ProductOrderMapper">
+
+    <select id="selectByPid" parameterType="ProductOrder">
+        select *
+        from where productId = #{productId};
+    </select>
+
+    <select id="selectJudgeByPid" resultMap="selectJudgeByPidMap">
+        select *,p.id pid,u.id uid,u.name uname from product_order p
+            left join user u on p.userId = u.id
+        where productId = #{productId} and isPay = 1
+    </select>
+    <resultMap id="selectJudgeByPidMap" type="com.lvshopadmin.entity.UserJudge">
+        <result property="id" column="pid"/>
+        <result property="judge" column="judge"/>
+        <result property="judgeDate" column="judgeDate"/>
+        <result property="color" column="color"/>
+        <result property="size" column="size"/>
+        <collection property="user" ofType="User">
+            <result property="id" column="uid"/>
+            <result property="name" column="uname"/>
+            <result property="url" column="url"/>
+        </collection>
+    </resultMap>
+
+
+
+
+
+
+</mapper>
