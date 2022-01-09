@@ -11,5 +11,10 @@ import org.apache.ibatis.annotations.Param;
  **/
 
 public interface UserService {
+//    按id查询用户的id、name、url信息
     User selectById(int id);
+    //查询账号密码正不正确
+    User selectLogin(User user);
+    //添加用户
+    int add(User user);
 }

@@ -8,6 +8,7 @@
         from where productId = #{productId};
     </select>
 
+<!--    查询商品评价-->
     <select id="selectJudgeByPid" resultMap="selectJudgeByPidMap">
         select *,p.id pid,u.id uid,u.name uname from product_order p
             left join user u on p.userId = u.id
@@ -26,7 +27,64 @@
         </collection>
     </resultMap>
 
+    <insert id="add" parameterType="ProductOrder">
+        insert into product_order (name, price, color, size, isPay, userId, productId, judge)
+        values (#{name}, #{price}, #{color}, #{size}, #{isPay}, #{userId}, #{productId}, #{judge});
+    </insert>
 
+<!--    按用户id查询购物车-->
+    <select id="selectShoppCart" resultMap="ShoppCart">
+        select *,p.price newPrice
+        from product_order po
+            left join product p on po.productId = p.id
+        where po.userId = #{userId} and isPay = -1;
+    </select>
+    <resultMap id="ShoppCart" type="com.lvshopadmin.entity.ShoppCart">
+        <result property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="color" column="color"/>
+        <result property="size" column="size"/>
+        <result property="userId" column="userId"/>
+        <result property="price" column="price"/>
+        <collection property="product" ofType="Product">
+            <result property="id" column="productId"/>
+            <result property="covers" column="covers"/>
+            <result property="describt" column="describt"/>
+            <result property="describt" column="describt"/>
+            <result property="price" column="newPrice"/>
+        </collection>
+    </resultMap>
+
+    <update id="update" parameterType="ProductOrder">
+        update product_order
+        <set>
+            <if test="name != null">
+                name = #{name},
+            </if>
+            <if test="price != null">
+                price = #{price},
+            </if>
+            <if test="color != null">
+                color = #{color},
+            </if>
+            <if test="size != null">
+                size = #{size},
+            </if>
+            <if test="isPay != null">
+                isPay = #{isPay},
+            </if>
+            <if test="userId != null">
+                userId = #{userId},
+            </if>
+            <if test="productId != null">
+                productId = #{productId},
+            </if>
+            <if test="judge != null">
+                judge = #{judge},
+            </if>
+        </set>
+        where id = #{id};
+    </update>
 
 
 

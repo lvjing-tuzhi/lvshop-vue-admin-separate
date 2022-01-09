@@ -1,5 +1,6 @@
 package com.lvshopadmin.service.productorder;
 
+import com.lvshopadmin.entity.ShoppCart;
 import com.lvshopadmin.entity.UserJudge;
 import com.lvshopadmin.mapper.ProductOrderMapper;
 import com.lvshopadmin.pojo.ProductOrder;
@@ -29,5 +30,20 @@ public class ProductOrderServiceImpl implements ProductOrderService{
     @Override
     public List<UserJudge> selectJudgeByPid(int productId) {
         return productOrderMapper.selectJudgeByPid(productId);
+    }
+
+    @Override
+    public int add(ProductOrder productOrder) {
+        return productOrderMapper.add(productOrder);
+    }
+
+    @Override
+    public List<ShoppCart> selectShoppCart(int userId) {
+        return productOrderMapper.selectShoppCart(userId);
+    }
+
+    @Override
+    public int update(ProductOrder productOrder) {
+        return productOrderMapper.update(productOrder);
     }
 }

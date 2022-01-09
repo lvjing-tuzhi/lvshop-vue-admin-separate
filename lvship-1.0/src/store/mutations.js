@@ -2,6 +2,9 @@ export default {
     addCart(state,payload) {
         state.cartList.push(payload)
     },
+    clearCart(state,payload) {
+        state.cartList = [];
+    },
     increaseCount(state,payload) {
         payload.count++
     },

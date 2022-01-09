@@ -8,6 +8,14 @@
         select id,name,url
         from user where id = #{id};
     </select>
+    <select id="selectLogin" parameterType="User" resultType="User">
+        select id,name,url
+        from user where username = #{username} and password = #{password};
+    </select>
+    <insert id="add" parameterType="User">
+        insert into user (name, username, password, url)
+        values (#{name}, #{username}, #{password}, #{url});
+    </insert>
 
 
 </mapper>

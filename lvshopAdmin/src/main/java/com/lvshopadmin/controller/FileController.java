@@ -4,6 +4,7 @@ import com.lvshopadmin.entity.Result;
 import com.lvshopadmin.entity.StatusCode;
 import com.lvshopadmin.pojo.File;
 import com.lvshopadmin.service.file.FileService;
+import com.lvshopadmin.util.FileUtile;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
@@ -11,6 +12,7 @@ import io.swagger.models.auth.In;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
 
@@ -83,5 +85,13 @@ public class FileController {
         }
     }
 
+    @PostMapping("/fileUpload")
+    @ApiOperation("上传文件接口")
+    public Result fileUpload(MultipartFile file) {
+        System.out.println(file);
+        String s = FileUtile.fileUpload(file);
+        System.out.println(s);
+        return new Result(true,StatusCode.OK,s);
+    }
 
 }

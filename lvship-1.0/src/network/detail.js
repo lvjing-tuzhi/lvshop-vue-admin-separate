@@ -2,6 +2,15 @@ import {request} from "./request";
 import {myLog, StringToArray} from "@/common/utils";
 
 
+//增加一个订单
+export function addOrder(product) {
+    return request({
+        url: '/order',
+        method: 'post',
+        data: product
+    })
+}
+
 //按商品id得到所有评论
 export function getComment(productId) {
     return request({

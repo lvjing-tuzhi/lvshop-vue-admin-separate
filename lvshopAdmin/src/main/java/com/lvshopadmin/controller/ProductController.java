@@ -10,6 +10,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.Serializable;
+
 /**
  * @program: lvshopAdmin
  * @description: 产品详情控制层
@@ -21,7 +23,7 @@ import org.springframework.web.bind.annotation.*;
 @CrossOrigin
 @RequestMapping("/product")
 @Api(tags = "商品详情接口")
-public class ProductController {
+public class ProductController implements Serializable {
 
     @Autowired
     ProductService productService;

@@ -22,4 +22,14 @@ public class UserServiceImpl implements UserService{
     public User selectById(int id) {
         return userMapper.selectById(id);
     }
+
+    @Override
+    public User selectLogin(User user) {
+        return userMapper.selectLogin(user);
+    }
+
+    @Override
+    public int add(User user) {
+        return userMapper.add(user);
+    }
 }

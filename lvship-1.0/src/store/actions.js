@@ -1,3 +1,5 @@
+import {myLog} from "@/common/utils";
+
 export default {
     addCart({state,commit} , payload) {
         return new Promise( (resolve) => {
@@ -14,4 +16,5 @@ export default {
         })
 
     }
+    ,
 }

@@ -6,13 +6,16 @@
       </template>
     </nav-bar>
     <cart-list :cart-list="cartList"/>
-    <cart-tool/>
+    <cart-tool @buySucceed="buySucceed"/>
   </div>
 </template>
 
 <script>
-import NavBar from "../../components/common/navbar/NavBar";
+import {getShopCart,cartOrder} from "@/network/cart";
+import {getCookie, myLog} from "@/common/utils";
+import {USERID} from "@/common/constant";
 import {mapGetters} from "vuex"
+import NavBar from "../../components/common/navbar/NavBar";
 import CartList from "./childComps/CartList";
 import CartTool from "./childComps/CartTool";
 export default {
@@ -24,9 +27,33 @@ export default {
     }
   },
   computed: {
-    ...mapGetters(['cartListCount','cartList'])
+    ...mapGetters(['cartListCount','cartList','selectedCart'])
   },
   created() {
+    this.getShopCart()
+  },
+  methods: {
+    getShopCart() {
+      let productId = getCookie(USERID)
+      if (productId == "") {
+        alert("您没登录，请先登录")
+        this.$router.push('/profile')
+      }else {
+        getShopCart(productId).then( res => {
+          let shopCart = res.result
+          this.$store.commit("clearCart")
+          myLog("shopCart",res)
+          for (let shopCartItem of shopCart) {
+            shopCartItem = new cartOrder(shopCartItem)
+            this.$store.dispatch('addCart',shopCartItem)
+          }
+        })
+      }
+
+    },
+    buySucceed() {
+      this.getShopCart()
+    }
   }
 }
 </script>

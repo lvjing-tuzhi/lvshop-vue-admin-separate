@@ -22,14 +22,15 @@
 </template>
 
 <script>
-import {getDetail,Goods,getGoodShop,getComment,GoodsParam,getRecommend} from "../../network/detail";
+import {getDetail,Goods,getGoodShop,getComment,addOrder,GoodsParam,getRecommend} from "../../network/detail";
+import {debounce,StringToArray,myLog,getCookie} from "../../common/utils";
+import {USERID} from "@/common/constant";
 import DetailNavBar from "./childComps/DetailNavBar";
 import Scroll from "../../components/common/scroll/Scroll";
 import Swiper from "../../components/common/swiper/Swiper";
 import DetailBottom from "./childComps/DetailBottom";
 import DetailBaseInfo from "./childComps/DetailBaseInfo";
 import DetailShopInfo from "./childComps/DetailShopInfo";
-import {debounce,StringToArray,myLog} from "../../common/utils";
 import DetailGoodsInfo from "./childComps/DetailGoodsInfo";
 import DetailParamInfo from "./childComps/DetailParamInfo";
 import DetailComment from "./childComps/DetailComment";
@@ -60,20 +61,48 @@ export default {
       }
     },
     addCart() {
+      //商品id
       this.product.iid = this.goods.id
+      this.product.productId = this.goods.id
+      myLog("detail-goods",this.goods)
       this.product.img = this.goods.covers
+      //订单名字
+      this.product.name = this.goods.title
       this.product.title = this.goods.title
       this.product.desc = this.goods.desc
+      this.product.price = this.goods.newPrice.substr(1)
       this.product.newPrice = this.goods.newPrice
-      myLog("product",this.product)
-      myLog("goods",this.goods)
-      this.$store.dispatch('addCart',this.product).then( res => {
-        this.toastMessage = res
-        this.toastShow = true
-        setTimeout( () => {
-          this.toastShow = false
-        },500)
-      })
+      //订单颜色
+      this.product.color = '红色'
+      //商品是否支付,-1购物车,0未支付，1支付
+      this.product.isPay = '-1'
+      //商品尺寸
+      this.product.size = 'M'
+      // 用户id
+      if (getCookie(USERID) != '') {
+        this.product.userId = getCookie(USERID)
+
+        myLog('已登录',getCookie(USERID))
+        addOrder(this.product).then( res => {
+          if (res.msg == "添加成功") {
+            //添加到vuex中
+              alert("加入成功")
+            // this.$store.dispatch('addCart',this.product).then( res => {
+            //   this.toastMessage = res
+            //   this.toastShow = true
+            //   setTimeout( () => {
+            //     this.toastShow = false
+            //   },500)
+            // })
+          }
+        })
+
+      }else {
+        console.log('没登录');
+        alert("您还没登录，请登录")
+        this.$router.push('/profile')
+      }
+
     },
     getDetail(iid) {
       getDetail(iid).then( res => {

@@ -21,7 +21,7 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 @ApiModel("订单实体类")
 public class ProductOrder {
-    @ApiModelProperty("订单实体类")
+    @ApiModelProperty("订单实id")
     private int id;
     @ApiModelProperty("订单名字")
     private String name;
@@ -31,7 +31,7 @@ public class ProductOrder {
     private String color;
     @ApiModelProperty("商品尺寸")
     private String size;
-    @ApiModelProperty("商品是否支付,0未支付，1支付")
+    @ApiModelProperty("商品是否支付,-1购物车,0未支付，1支付")
     private String isPay;
     @ApiModelProperty("userId")
     private int userId;

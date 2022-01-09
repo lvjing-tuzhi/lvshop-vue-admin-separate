@@ -1,3 +1,4 @@
+import {myLog} from "@/common/utils";
 
 export default {
     cartList: state => {return state.cartList},
@@ -14,13 +15,30 @@ export default {
         }
 
     },
+    cartPriceCount: state => {
+        let temp = state.cartList.filter( item => {
+            return item.checkSelect
+        } )
+        if(temp.length > 0){
+            return temp.reduce( (pre , cur) => {return pre+cur.newPrice*cur.count} ,0)
+        }else {
+            return 0
+        }
+    },
     cartAllSelect: state => {
         let cart = state.cartList
         if(cart.length == 0) return false
         for (const c of cart) {
-            console.log(c.checkSelect)
+            // console.log(c.checkSelect)
             if(!c.checkSelect) return false
         }
         return true
+    },
+    selectedCart: state => {
+        let temp = state.cartList.filter( item => {
+            console.log(item.checkSelect);
+            return item.checkSelect
+        })
+        return temp;
     }
 }

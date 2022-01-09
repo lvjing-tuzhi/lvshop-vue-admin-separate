@@ -1,5 +1,31 @@
 //公共方法
 
+// 设置cookie
+export function setCookie(cname,cvalue) {
+    var d = new Date();
+    // d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    // var expires = "expires=" + d.toUTCString();
+    // console.info(cname + "=" + cvalue + "; ");
+    // document.cookie = cname + "=" + cvalue + "; " + expires;
+    document.cookie = cname + "=" + cvalue;
+    // console.info(document.cookie);
+}
+// 获取cookie
+export function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    // console.log("获取cookie,现在循环")
+    for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        // console.log(c)
+        while (c.charAt(0) == ' ') c = c.substring(1);
+        if (c.indexOf(name) != -1){
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
 //打印
 export function myLog(str,data) {
     console.log("======" + str + "======");

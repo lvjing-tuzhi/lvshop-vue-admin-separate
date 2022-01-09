@@ -1,6 +1,7 @@
 package com.lvshopadmin.service.productcategory;
 
 import com.lvshopadmin.pojo.ProductCategory;
+import com.lvshopadmin.pojo.ProductOrder;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -21,4 +22,5 @@ public interface ProductCategoryService {
     List<ProductCategory> selectByPid(int pid);
     //查询一级分类
     List<ProductCategory> selectOneCategory();
+
 }

@@ -10,6 +10,7 @@ spring:
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
+#    static-path-pattern: /**
 mybatis:
   type-aliases-package: com.lvshopadmin.pojo
   mapper-locations: classpath:mapper/*.xml

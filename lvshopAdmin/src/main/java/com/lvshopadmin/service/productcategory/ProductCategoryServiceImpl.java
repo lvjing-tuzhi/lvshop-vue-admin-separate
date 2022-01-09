@@ -2,6 +2,7 @@ package com.lvshopadmin.service.productcategory;
 
 import com.lvshopadmin.mapper.ProductCategoryMapper;
 import com.lvshopadmin.pojo.ProductCategory;
+import com.lvshopadmin.pojo.ProductOrder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -39,4 +40,5 @@ public class ProductCategoryServiceImpl implements ProductCategoryService {
     public List<ProductCategory> selectOneCategory() {
         return categoryMapper.selectByPid(0);
     }
+
 }
